@@ -20,7 +20,10 @@ A curated collection of free subdomains ideal for personal websites, open-source
  | [Open Domains](https://open-domains.net) | Free subdomains for personal sites, open-source projects, and more. It offers `is-cool.dev` & `is-a-fullstack.dev` & `is-local.org` & `is-not-a.dev` & `localplayer.dev`. | [open-domains/register](https://github.com/open-domains/register) | ✅ |
  | [Open Host](https://registry.openhost.uk/) | A free subdomain service offering subdomains on `prvcy.page`, `16-b.it`, `32-b.it`, `64-b.it`, `pride.moe` and `pride.ngo`. | — | ✅ |
  | [Domains Project](https://getyourfree.space/) | Free developer subdomains under owns.it.com, with more domains coming soon. | [domainsproject/register](https://github.com/domainsproject/register) | ✅ |
- | [is-a-good.dev](https://is-a-good.dev/) | Register for your is-a-good.dev domain! | [is-a-good-dev/register](https://github.com/is-a-good-dev/register) | ✅ | 
+ | [Is-Cool-Me](https://registry.openhost.uk/) | Free subdomains for personal sites, open-source projects, and more, offering subdomains on `is-epic.me` and  `is-awsm.tech`. | — | ✅ |
+ | [is-a-good.dev](https://is-a-good.dev/) | Register for your is-a-good.dev domain! | [is-a-good-dev/register](https://github.com/is-a-good-dev/register) | ✅ |
+ | [is-truly-a.pro](https://is-truly-a.pro/) | Free `is-truly-a.pro` subdomains, available for everyone! | [is-truly-a-pro/register](https://github.com/is-truly-a-pro/register) | ✅ |
+ | [is-not.cool](https://is-not.cool/) | Get your own 'is-not.cool' subdomain! | [is-not-cool/registration](https://github.com/is-not-cool/registration) | ✅ |
  | [js.cool](https://js.cool/)| Provide free subdomains for Chinese open source projects (since August 2020), now support Vercel! | [willin/domain](https://github.com/willin/domain) | ✅ | 
  | [js.org](https://js.org/) | Dedicated to JavaScript and its awesome community since 2015 | [js-org/js.org](https://github.com/js-org/js.org) | ✅ |
  | [ngo.us](https://nic.ngo.us/) | Free subdomains exclusively for nonprofits, nongovernmental organizations (NGOs) and initiatives. | [ngo-us/registry](https://github.com/ngo-us/registry) | ✅ |
@@ -44,4 +47,4 @@ A curated collection of free subdomains ideal for personal websites, open-source
 This project is under the [MIT License](LICENSE).
 <br>
 <br>
-⬆️ [**Back to Top**](#free-domains)
+⬆️ [**Back to Top**](#-free-domains)
