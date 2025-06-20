@@ -6,6 +6,9 @@ A curated collection of free subdomains ideal for personal websites, open-source
 ⭐ [Star on GitHub](https://github.com/harys722/free-domains)
 &bull;
 🤝 Contribute
+&bull;
+🌐 Website (Soon)
+
 <br><br>
 ![GitHub stars](https://img.shields.io/github/stars/harys722/free-domains?style=flat&label=Stars)
 &bull;
