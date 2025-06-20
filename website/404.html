@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | Free Domains</title>
+    <meta name="description" content="The page you're looking for couldn't be found. Return to Free Domains to explore our collection of free subdomains.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {             --bg-primary: #ffffff;             --bg-secondary: #f8fafc;             --bg-tertiary: #f1f5f9;             --text-primary: #1e293b;             --text-secondary: #64748b;             --text-tertiary: #94a3b8;             --border-color: #e2e8f0;             --accent-color: #3b82f6;             --accent-hover: #2563eb;             --success-color: #10b981;             --danger-color: #ef4444;             --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);             --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);             --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);         }          [data-theme="dark"] {             --bg-primary: #0f172a;             --bg-secondary: #1e293b;             --bg-tertiary: #334155;             --text-primary: #f1f5f9;             --text-secondary: #cbd5e1;             --text-tertiary: #94a3b8;             --border-color: #334155;             --accent-color: #60a5fa;             --accent-hover: #3b82f6;             --success-color: #34d399;             --danger-color: #f87171;         }          * {             margin: 0;             padding: 0;             box-sizing: border-box;         }          body {             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;             background-color: var(--bg-primary);             color: var(--text-primary);             line-height: 1.6;             transition: background-color 0.3s ease, color 0.3s ease;             min-height: 100vh;             display: flex;             flex-direction: column;         }          .container {             max-width: 1200px;             margin: 0 auto;             padding: 0 1rem;         }          /* Header */         .header {             background-color: var(--bg-secondary);             border-bottom: 1px solid var(--border-color);             padding: 1rem 0;             backdrop-filter: blur(10px);         }          .header-content {             display: flex;             justify-content: space-between;             align-items: center;         }          .logo {             display: flex;             align-items: center;             gap: 0.5rem;             font-size: 1.5rem;             font-weight: 700;             color: var(--text-primary);             text-decoration: none;             transition: all 0.3s ease;         }          .logo:hover {             color: var(--accent-color);             transform: translateY(-1px);         }          .theme-toggle {             background: none;             border: 2px solid var(--border-color);             border-radius: 50px;             padding: 0.5rem;             cursor: pointer;             color: var(--text-primary);             font-size: 1.2rem;             transition: all 0.3s ease;             display: flex;             align-items: center;             justify-content: center;             width: 44px;             height: 44px;         }          .theme-toggle:hover {             border-color: var(--accent-color);             background-color: var(--bg-tertiary);             transform: scale(1.05);         }          /* Main Content */         .main {             flex: 1;             display: flex;             align-items: center;             justify-content: center;             padding: 3rem 0;             position: relative;             overflow: hidden;         }          .error-container {             text-align: center;             max-width: 600px;             position: relative;             z-index: 2;         }          .error-number {             font-size: 8rem;             font-weight: 700;             background: linear-gradient(135deg, var(--accent-color), #8b5cf6);             -webkit-background-clip: text;             -webkit-text-fill-color: transparent;             background-clip: text;             line-height: 1;             margin-bottom: 1rem;             animation: float 3s ease-in-out infinite;         }          .error-title {             font-size: 2.5rem;             font-weight: 600;             margin-bottom: 1rem;             color: var(--text-primary);         }          .error-subtitle {             font-size: 1.25rem;             color: var(--text-secondary);             margin-bottom: 2rem;             line-height: 1.5;         }          .error-actions {             display: flex;             gap: 1rem;             justify-content: center;             flex-wrap: wrap;             margin-bottom: 3rem;         }          .btn {             display: inline-flex;             align-items: center;             gap: 0.5rem;             padding: 0.75rem 1.5rem;             border-radius: 0.5rem;             font-weight: 500;             text-decoration: none;             transition: all 0.3s ease;             border: none;             cursor: pointer;             font-size: 1rem;         }          .btn-primary {             background-color: var(--accent-color);             color: white;         }          .btn-primary:hover {             background-color: var(--accent-hover);             transform: translateY(-2px);             box-shadow: var(--shadow-lg);         }          .btn-secondary {             background-color: var(--bg-tertiary);             color: var(--text-primary);             border: 1px solid var(--border-color);         }          .btn-secondary:hover {             background-color: var(--bg-secondary);             transform: translateY(-2px);             box-shadow: var(--shadow-md);         }          .helpful-links {             background-color: var(--bg-secondary);             border: 1px solid var(--border-color);             border-radius: 1rem;             padding: 2rem;             margin-top: 2rem;         }          .helpful-links h3 {             font-size: 1.25rem;             font-weight: 600;             margin-bottom: 1rem;             color: var(--text-primary);         }          .links-grid {             display: grid;             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));             gap: 1rem;         }          .link-item {             display: flex;             align-items: center;             gap: 0.5rem;             padding: 0.75rem;             background-color: var(--bg-tertiary);             border-radius: 0.5rem;             text-decoration: none;             color: var(--text-primary);             transition: all 0.3s ease;             border: 1px solid transparent;         }          .link-item:hover {             border-color: var(--accent-color);             background-color: var(--bg-primary);             transform: translateY(-1px);         }          .link-icon {             font-size: 1.2rem;         }          /* Background Animation */         .floating-elements {             position: absolute;             top: 0;             left: 0;             width: 100%;             height: 100%;             pointer-events: none;             z-index: 1;         }          .floating-element {             position: absolute;             opacity: 0.1;             animation: floatRandom 6s ease-in-out infinite;         }          .floating-element:nth-child(1) {             top: 20%;             left: 10%;             animation-delay: 0s;             font-size: 2rem;         }          .floating-element:nth-child(2) {             top: 60%;             right: 15%;             animation-delay: 1s;             font-size: 1.5rem;         }          .floating-element:nth-child(3) {             bottom: 30%;             left: 20%;             animation-delay: 2s;             font-size: 1.8rem;         }          .floating-element:nth-child(4) {             top: 40%;             right: 30%;             animation-delay: 3s;             font-size: 1.2rem;         }          .floating-element:nth-child(5) {             bottom: 20%;             right: 10%;             animation-delay: 4s;             font-size: 2.2rem;         }          /* Animations */         @keyframes float {             0%, 100% {                 transform: translateY(0px);             }             50% {                 transform: translateY(-20px);             }         }          @keyframes floatRandom {             0%, 100% {                 transform: translateY(0px) rotate(0deg);             }             33% {                 transform: translateY(-15px) rotate(5deg);             }             66% {                 transform: translateY(10px) rotate(-3deg);             }         }          .fade-in {             animation: fadeIn 0.8s ease-out;         }          @keyframes fadeIn {             from {                 opacity: 0;                 transform: translateY(30px);             }             to {                 opacity: 1;                 transform: translateY(0);             }         }          /* Responsive Design */         @media (max-width: 768px) {             .error-number {                 font-size: 6rem;             }              .error-title {                 font-size: 2rem;             }              .error-subtitle {                 font-size: 1rem;             }              .error-actions {                 flex-direction: column;                 align-items: center;             }              .links-grid {                 grid-template-columns: 1fr;             }              .helpful-links {                 padding: 1.5rem;             }         }          @media (max-width: 480px) {             .error-number {                 font-size: 4rem;             }              .error-title {                 font-size: 1.5rem;             }         } .footer {             background-color: var(--bg-secondary);             border-top: 1px solid var(--border-color);             padding: 2rem 0;             margin-top: 4rem;             text-align: center;         }          .footer-content {             color: var(--text-secondary);         }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo">
+                    🌐 Free Domains
+                </a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <span id="themeIcon">🌙</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="floating-elements">
+            <div class="floating-element">🌐</div>
+            <div class="floating-element">🔗</div>
+            <div class="floating-element">💻</div>
+            <div class="floating-element">⚡</div>
+            <div class="floating-element">🚀</div>
+        </div>
+        
+        <div class="container">
+            <div class="error-container fade-in">
+                <div class="error-number">404</div>
+                <h1 class="error-title">Page Not Found</h1>
+                <p class="error-subtitle">
+                    Oops! The page you're looking for seems to have disappeared into the digital void. 
+                    Don't worry, even the best domains sometimes lead to dead ends.
+                </p>
+                
+                <div class="error-actions">
+                    <button onclick="history.back()" class="btn btn-secondary">
+                        ↩️ Go Back
+                    </button>
+                    <a href="/index.html" class="btn btn-primary">
+                        🏠 Home
+                    </a>
+                </div>
+
+                <div class="helpful-links">
+                    <h3>✨ Popular Destinations</h3>
+                    <div class="links-grid">
+                        <a href="index.html#domains" class="link-item">
+                            <span class="link-icon">🤝</span>
+                            <span>Explore Domains</span>
+                        </a>
+                        <a href="https://github.com/harys722/free-domains" target="_blank" class="link-item">
+                            <span class="link-icon">⭐</span>
+                            <span>GitHub Repository</span>
+                        </a>
+                        <a href="https://is-a.dev" target="_blank" class="link-item">
+                            <span class="link-icon">🌟</span>
+                            <span>is-a.dev</span>
+                        </a>
+                        <a href="https://js.org" target="_blank" class="link-item">
+                            <span class="link-icon">📜</span>
+                            <span>js.org</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>© 2025 Project by <a href="https://harys.is-a.dev/" target="_blank" style="color: var(--accent-color);">harys722</a>. | All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+                /* Theme Toggle Functionality */         const themeToggle = document.getElementById('themeToggle');         const themeIcon = document.getElementById('themeIcon');         const body = document.body;          /* Check for saved theme preference or default to 'light' */         const currentTheme = localStorage.getItem('theme') || 'light';         body.setAttribute('data-theme', currentTheme);         updateThemeIcon(currentTheme);          themeToggle.addEventListener('click', () => {             const currentTheme = body.getAttribute('data-theme');             const newTheme = currentTheme === 'dark' ? 'light' : 'dark';                          body.setAttribute('data-theme', newTheme);             updateThemeIcon(newTheme);             localStorage.setItem('theme', newTheme);         });          function updateThemeIcon(theme) {             themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';         }          /* Add some interactive effects */         document.addEventListener('mousemove', (e) => {             const floatingElements = document.querySelectorAll('.floating-element');             const mouseX = e.clientX / window.innerWidth;             const mouseY = e.clientY / window.innerHeight;                          floatingElements.forEach((element, index) => {                 const speed = (index + 1) * 0.5;                 const x = (mouseX - 0.5) * speed;                 const y = (mouseY - 0.5) * speed;                                  element.style.transform = `translate(${x}px, ${y}px)`;             });         });          /* Konami code easter egg */         let konamiCode = [];         const konamiSequence = [             'ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown',             'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight',             'KeyB', 'KeyA'         ];          document.addEventListener('keydown', (e) => {             konamiCode.push(e.code);             if (konamiCode.length > konamiSequence.length) {                 konamiCode.shift();             }                          if (konamiCode.join('') === konamiSequence.join('')) {                 /* Easter egg: Change all floating elements to party emojis */                const floatingElements = document.querySelectorAll('.floating-element');                 floatingElements.forEach(element => {                     element.textContent = '🎉';                     element.style.opacity = '0.3';                 });                                  /* Show a fun message */                 const errorTitle = document.querySelector('.error-title');                 const originalTitle = errorTitle.textContent;                 errorTitle.textContent = '🎉 You found the secret! 🎉';                 errorTitle.style.background = 'linear-gradient(135deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #feca57)';                 errorTitle.style.webkitBackgroundClip = 'text';                 errorTitle.style.webkitTextFillColor = 'transparent';                                  setTimeout(() => {                     errorTitle.textContent = originalTitle;                     errorTitle.style.background = '';                     errorTitle.style.webkitBackgroundClip = '';                     errorTitle.style.webkitTextFillColor = '';                     floatingElements.forEach((element, index) => {                         const icons = ['🌐', '🔗', '💻', '⚡', '🚀'];                         element.textContent = icons[index];                         element.style.opacity = '0.1';                     });                 }, 3000);                                  konamiCode = [];             }         });
+    </script>
+</body>
+</html>
