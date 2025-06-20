@@ -30,6 +30,7 @@ A curated collection of free subdomains ideal for personal websites, open-source
  | [nyc.mn](https://dot.nyc.mn/) | Free subdomains exclusively for nonprofits, nongovernmental organizations (NGOs) and initiatives. | — | ✅ |
  | [pp.ua](https://pp.ua/) | Free pp.ua subdomains. | — | ✅ |
  | [us.kg](https://nic.us.kg/) | Free subdomain service run by the nonprofit DigitalPlat Foundation, supported by the Hack Foundation.	| — | ✅ |
+ | [foo.ng](https://foo.ng/) | Free `foo.ng` subdomains for everyone. | [Pokymon/foo.ng](https://github.com/Pokymon/foo.ng) | ✅ |
  | [zone.id](https://zone.id/) | Zone.ID is a premium subdomain provider as an alternative to the traditional .id TLD. | — | ✅ |
  | [is-an.app](https://is-an.app/) |  🌐 DNS configuration for some of my domains. (Not available anymore) | [tarampampam/free-domains](https://github.com/tarampampam/free-domains) | ❌  |
  | [is-a.co](https://is-a.co/) | 🌐 Grab your own subdomain for free Follow the steps listed below to get your own subdomain! | [PythonicBoat/is-a.co](https://github.com/PythonicBoat/is-a.co) | ❌ |
@@ -44,7 +45,7 @@ A curated collection of free subdomains ideal for personal websites, open-source
 <hr>
 
 ## License
-This project is under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](LICENSE).
 <br>
 <br>
 ⬆️ [**Back to Top**](#-free-domains)
