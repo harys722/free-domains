@@ -121,9 +121,9 @@ const domainsData = [
     },
     {
         name: "Is-Cool-Me",
-        url: "https://registry.openhost.uk/",
+        url: "https://is.epic.me",
         description: "Free subdomains for personal sites, open-source projects, and more, offering subdomains on is-epic.me and is-awsm.tech.",
-        repo: null,
+        repo: "is-cool-me/register",
         available: true
     },
     {
