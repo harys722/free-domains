@@ -113,6 +113,13 @@ const domainsData = [
         available: true
     },
     {
+        name: "part-of.my.id",
+        url: "https://part-of.my.id/",
+        description: "Your own personal id for your website.",
+        repo: "partofmyid/register",
+        available: true
+    },
+    {
         name: "Is-Cool-Me",
         url: "https://registry.openhost.uk/",
         description: "Free subdomains for personal sites, open-source projects, and more, offering subdomains on is-epic.me and is-awsm.tech.",
