@@ -36,6 +36,13 @@ const domainsData = [
         available: true
     },
     {
+        name: "DigitalPlat FreeDomain",
+        url: "https://domain.digitalplat.org/",
+        description: "DigitalPlat FreeDomain: Free Domain For Everyone. We offers .DPDNS.ORG, .US.KG, .QZZ.IO and .XX.KG domain extensions.",
+        repo: "DigitalPlatDev/FreeDomain",
+        available: true
+    },
+    {
         name: "cluster.ws & wip.la",
         url: "https://cluster.ws/",
         description: "Get a cluster.ws & wip.la domain for free and instantly",
@@ -54,6 +61,13 @@ const domainsData = [
         url: "https://thedev.id/",
         description: "An identity for developers on the web.",
         repo: "thedev-id/thedev.id",
+        available: true
+    },
+    {
+        name: "thedev.me",
+        url: "https://thedev.me/",
+        description: "Get your free '{name}.thedev.me' domain.",
+        repo: "thedev-me/register",
         available: true
     },
     {
