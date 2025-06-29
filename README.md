@@ -1,6 +1,6 @@
 <!-- data:start -->
 <div align="center">
-<img src="website/images/banner.png" width="600" height="300">
+<img src="website/media/banner.png" width="600" height="300">
 <hr />
 <br />
 <h3>🌐 Free Domains</h3>
@@ -41,6 +41,7 @@
  | [is-cod.in](https://is-cod.in/) | Get your website a professional touch with a free is-cod.in domain! | [is-cod-in/register](https://github.com/is-cod-in/register) <br><br> ![GitHub stars](https://img.shields.io/github/stars/is-cod-in/register?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/is-cod-in/register?style=flat&label=Forks) | ✅ |
  | [thedev.id](https://thedev.id/) | An identity for developers on the web. | [thedev-id/thedev.id](https://github.com/thedev-id/thedev.id) <br><br> ![GitHub stars](https://img.shields.io/github/stars/thedev-id/thedev.id?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/thedev-id/thedev.id?style=flat&label=Forks)| ✅ |
  | [thedev.me](https://thedev.me/) | Get your free '{name}.thedev.me' domain. | [thedev-me/register](https://github.com/thedev-me/register) <br><br> ![GitHub stars](https://img.shields.io/github/stars/thedev-me/register?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/thedev-me/register?style=flat&label=Forks)| ✅ |
+ | [rweb.site](https://rweb.site/) | Free `rweb.site` subdomain for personal websites, open-source projects and more. | [katorlys/rweb.site](https://github.com/katorlys/rweb.site) <br><br> ![GitHub stars](https://img.shields.io/github/stars/katorlys/rweb.site?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/katorlys/rweb.site?style=flat&label=Forks)| ✅ |
  | [cluster.ws](https://cluster.ws/) & [wip.la](https://wip.la/) | Get a cluster.ws & wip.la domain for free and instantly | [Olivr/free-domain](https://github.com/Olivr/free-domain) <br><br> ![GitHub stars](https://img.shields.io/github/stars/Olivr/free-domain?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/Olivr/free-domain?style=flat&label=Forks) | ✅ |
  | [js.cool](https://js.cool/)| Provide free subdomains for Chinese open source projects (since August 2020), now support Vercel! | [willin/domain](https://github.com/willin/domain) <br><br> ![GitHub stars](https://img.shields.io/github/stars/willin/domain?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/willin/domain?style=flat&label=Forks) | ✅ | 
  | [ngo.us](https://nic.ngo.us/) | Free subdomains exclusively for nonprofits, nongovernmental organizations (NGOs) and initiatives. | [ngo-us/registry](https://github.com/ngo-us/registry) <br><br> ![GitHub stars](https://img.shields.io/github/stars/ngo-us/registry?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/ngo-us/registry?style=flat&label=Forks) | ✅ |
