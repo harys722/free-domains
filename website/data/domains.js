@@ -37,14 +37,14 @@ const domainsData = [
     },
     {
         name: "Open Host",
-        url: "https://now-is.online./",
+        url: "https://registry.openhost.uk/",
         description: "A free subdomain service offering subdomains on prvcy.page, 16-b.it, 32-b.it, 64-b.it, pride.moe and pride.ngo.",
         repo: null,
         available: true
     },
     {
         name: "SubFree Project",
-        url: "https://registry.openhost.uk/",
+        url: "https://now-is.online/",
         description: "SubFree is a free and simple subdomain service inspired by is-a.dev designed for developers, creators, and builders who want custom subdomains.",
         repo: "rubahilang/SubFree-Project",
         available: true
@@ -57,24 +57,10 @@ const domainsData = [
         available: true
     },
     {
-        name: "cluster.ws & wip.la",
-        url: "https://cluster.ws/",
-        description: "Get a cluster.ws & wip.la domain for free and instantly",
-        repo: "Olivr/free-domain",
-        available: true
-    },
-    {
-        name: "thedev.id",
-        url: "https://thedev.id/",
-        description: "An identity for developers on the web.",
-        repo: "thedev-id/thedev.id",
-        available: true
-    },
-    {
-        name: "thedev.me",
-        url: "https://thedev.me/",
-        description: "Get your free '{name}.thedev.me' domain.",
-        repo: "thedev-me/register",
+        name: "Is-Cool-Me",
+        url: "https://is.epic.me",
+        description: "Free subdomains for personal sites, open-source projects, and more, offering subdomains on is-epic.me and is-awsm.tech.",
+        repo: "is-cool-me/register",
         available: true
     },
     {
@@ -113,6 +99,27 @@ const domainsData = [
         available: true
     },
     {
+        name: "thedev.id",
+        url: "https://thedev.id/",
+        description: "An identity for developers on the web.",
+        repo: "thedev-id/thedev.id",
+        available: true
+    },
+    {
+        name: "thedev.me",
+        url: "https://thedev.me/",
+        description: "Get your free '{name}.thedev.me' domain.",
+        repo: "thedev-me/register",
+        available: true
+    },
+    {
+        name: "cluster.ws & wip.la",
+        url: "https://cluster.ws/",
+        description: "Get a cluster.ws & wip.la domain for free and instantly",
+        repo: "Olivr/free-domain",
+        available: true
+    },
+    {
         name: "js.cool",
         url: "https://js.cool/",
         description: "Provide free subdomains for Chinese open source projects (since August 2020), now support Vercel!",
@@ -127,17 +134,17 @@ const domainsData = [
         available: true
     },
     {
-        name: "us.kg",
-        url: "https://nic.us.kg/",
-        description: "Free subdomain service run by the nonprofit DigitalPlat Foundation, supported by the Hack Foundation.",
-        repo: null,
-        available: true
-    },
-    {
         name: "pp.ua",
         url: "https://pp.ua/",
         description: "Free pp.ua subdomains.",
         repo: null,
+        available: true
+    },
+    {
+        name: "part-of.my.id",
+        url: "https://part-of.my.id/",
+        description: "Your own personal id for your website.",
+        repo: "partofmyid/register",
         available: true
     },
     {
@@ -152,20 +159,6 @@ const domainsData = [
         url: "https://zone.id/",
         description: "Zone.ID is a premium subdomain provider as an alternative to the traditional .id TLD.",
         repo: null,
-        available: true
-    },
-    {
-        name: "part-of.my.id",
-        url: "https://part-of.my.id/",
-        description: "Your own personal id for your website.",
-        repo: "partofmyid/register",
-        available: true
-    },
-    {
-        name: "Is-Cool-Me",
-        url: "https://is.epic.me",
-        description: "Free subdomains for personal sites, open-source projects, and more, offering subdomains on is-epic.me and is-awsm.tech.",
-        repo: "is-cool-me/register",
         available: true
     },
     {
