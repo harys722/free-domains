@@ -113,6 +113,13 @@ const domainsData = [
         available: true
     },
     {
+        name: "rweb.site",
+        url: "https://rweb.site/",
+        description: "Free 'rweb.site' subdomain for personal websites, open-source projects and more.",
+        repo: "katorlys/rweb.site",
+        available: true
+    },
+    {
         name: "cluster.ws & wip.la",
         url: "https://cluster.ws/",
         description: "Get a cluster.ws & wip.la domain for free and instantly",
