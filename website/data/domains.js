@@ -1,4 +1,4 @@
-// domains.js - Domain data for Free Domains website
+// Domains data for Free Domains website
 const domainsData = [
     {
         name: "is-a.dev",
@@ -29,13 +29,6 @@ const domainsData = [
         available: true
     },
     {
-        name: "foo.ng",
-        url: "https://foo.ng/",
-        description: "Free foo.ng subdomains for everyone.",
-        repo: "Pokymon/foo.ng",
-        available: true
-    },
-    {
         name: "DigitalPlat FreeDomain",
         url: "https://domain.digitalplat.org/",
         description: "DigitalPlat FreeDomain: Free Domain For Everyone. We offers .DPDNS.ORG, .US.KG, .QZZ.IO and .XX.KG domain extensions.",
@@ -43,17 +36,31 @@ const domainsData = [
         available: true
     },
     {
+        name: "Open Host",
+        url: "https://now-is.online./",
+        description: "A free subdomain service offering subdomains on prvcy.page, 16-b.it, 32-b.it, 64-b.it, pride.moe and pride.ngo.",
+        repo: null,
+        available: true
+    },
+    {
+        name: "SubFree Project",
+        url: "https://registry.openhost.uk/",
+        description: "SubFree is a free and simple subdomain service inspired by is-a.dev designed for developers, creators, and builders who want custom subdomains.",
+        repo: "rubahilang/SubFree-Project",
+        available: true
+    },
+    {
+        name: "foo.ng",
+        url: "https://foo.ng/",
+        description: "Free foo.ng subdomains for everyone.",
+        repo: "Pokymon/foo.ng",
+        available: true
+    },
+    {
         name: "cluster.ws & wip.la",
         url: "https://cluster.ws/",
         description: "Get a cluster.ws & wip.la domain for free and instantly",
         repo: "Olivr/free-domain",
-        available: true
-    },
-    {
-        name: "Open Host",
-        url: "https://registry.openhost.uk/",
-        description: "A free subdomain service offering subdomains on prvcy.page, 16-b.it, 32-b.it, 64-b.it, pride.moe and pride.ngo.",
-        repo: null,
         available: true
     },
     {
@@ -92,6 +99,20 @@ const domainsData = [
         available: true
     },
     {
+        name: "is-a.shop",
+        url: "https://is-a.shop/",
+        description: "Get is-a.shop subdomain for your shop.",
+        repo: "is-a-shop/register",
+        available: true
+    },
+    {
+        name: "is-cod.in",
+        url: "https://is-cod.in/",
+        description: "Get your website a professional touch with a free is-cod.in domain!",
+        repo: "is-cod-in/register",
+        available: true
+    },
+    {
         name: "js.cool",
         url: "https://js.cool/",
         description: "Provide free subdomains for Chinese open source projects (since August 2020), now support Vercel!",
@@ -117,6 +138,13 @@ const domainsData = [
         url: "https://pp.ua/",
         description: "Free pp.ua subdomains.",
         repo: null,
+        available: true
+    },
+    {
+        name: "lgbt.sh",
+        url: "https://lgbt.sh/",
+        description: "Free lgbt.sh sub-domain registration service.",
+        repo: "lgbt-sh/lgbt-sh",
         available: true
     },
     {
@@ -152,6 +180,13 @@ const domainsData = [
         url: "https://is-an.app/",
         description: "🌐 DNS configuration for some of my domains. (Not available anymore)",
         repo: "tarampampam/free-domains",
+        available: false
+    },
+    {
+        name: "possibly-is.gay",
+        url: "https://possibly-is.gay/",
+        description: "Self-service possibly-is.gay subdomain registration.",
+        repo: "possibly-is-gay/possibly-is-gay",
         available: false
     },
     {
@@ -191,7 +226,7 @@ const domainsData = [
     }
 ];
 
-// Export for use in other files
+// Export for use in homepage
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = domainsData;
 }
