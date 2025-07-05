@@ -29,6 +29,13 @@ const domainsData = [
         available: true
     },
     {
+        name: "name.com",
+        url: "https://www.name.com/partner/github-students",
+        description: "Name.com has partnered with GitHub to provide free domain names to students. Offering up to 10 free domains including .live, .studio .games, .software & more.",
+        repo: null,
+        available: true
+    },
+    {
         name: "DigitalPlat FreeDomain",
         url: "https://domain.digitalplat.org/",
         description: "DigitalPlat FreeDomain: Free Domain For Everyone. We offers .DPDNS.ORG, .US.KG, .QZZ.IO and .XX.KG domain extensions.",
@@ -219,14 +226,14 @@ const domainsData = [
     },
     {
         name: "merahputih.moe",
-        url: "https://Merahputih.moe/",
+        url: "https://merahputih.moe/",
         description: "Are you weeb developer looking for free webspace to host your project? Get free subdomain merahputih.moe UwU",
         repo: "ScathachGrip/merahputih.moe",
         available: false
     }
 ];
 
-// Export for use in homepage
+// Export for use in main website
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = domainsData;
 }
