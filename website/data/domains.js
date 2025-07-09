@@ -127,13 +127,6 @@ const domainsData = [
         available: true
     },
     {
-        name: "cluster.ws & wip.la",
-        url: "https://cluster.ws/",
-        description: "Get a cluster.ws & wip.la domain for free and instantly",
-        repo: "Olivr/free-domain",
-        available: true
-    },
-    {
         name: "js.cool",
         url: "https://js.cool/",
         description: "Provide free subdomains for Chinese open source projects (since August 2020), now support Vercel!",
@@ -174,6 +167,13 @@ const domainsData = [
         description: "Zone.ID is a premium subdomain provider as an alternative to the traditional .id TLD.",
         repo: null,
         available: true
+    },
+    {
+        name: "cluster.ws & wip.la",
+        url: "https://cluster.ws/",
+        description: "Get a cluster.ws & wip.la domain for free and instantly",
+        repo: "Olivr/free-domain",
+        available: false
     },
     {
         name: "nyc.mn",
