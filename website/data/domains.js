@@ -99,6 +99,13 @@ const domainsData = [
         available: true
     },
     {
+        name: "is-an.ai",
+        url: "https://is-an.ai/",
+        description: "🤖 Free .is-an.ai subdomains for AI projects. No DNS config, no waiting.",
+        repo: "is-an-ai/is-an.ai",
+        available: true
+    },
+    {
         name: "is-cod.in",
         url: "https://is-cod.in/",
         description: "Get your website a professional touch with a free is-cod.in domain!",
