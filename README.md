@@ -1,21 +1,29 @@
 <!-- data:start -->
+<a id="top"></a>
+
 <div align="center">
-<img src="website/media/banner.png" width="600" height="300">
-<hr />
-<br />
-<h3>🌐 Free Domains</h3>
-<p>A curated collection of free subdomains ideal for personal websites, open-source projects, portfolio showcases, and innovative online ventures.</p>
+  <a href="#">
+    <img src="website/favicon.ico" alt="Logo" width="80" height="80">
+  </a>
 
-![GitHub stars](https://img.shields.io/github/stars/harys722/free-domains?style=flat&label=Stars)
-&bull;
-![GitHub forks](https://img.shields.io/github/forks/harys722/free-domains?style=flat&label=Forks)
+  <h1 align="center">Free Domains</h1>
 
-⭐ [Star on GitHub](https://github.com/harys722/free-domains)
-&bull;
-🤝 [Contribute](https://github.com/harys722/free-domains/blob/main/CONTRIBUTING.md)
-&bull;
-🌐 <a href="https://free-domains.harys.is-a.dev/" target="_blank" rel="Website noreferrer">Website</a>
+  <p align="center">
+    A curated collection of free subdomains ideal for personal websites, open source projects, portfolio showcases, and innovative online ventures.
+    <br />
+    <br />
+    ⭐ <a href="https://github.com/harys722/free-domains">Star on GitHub</a>
+    &bull;
+    🤝 <a href="https://github.com/harys722/free-domains/blob/main/CONTRIBUTING.md">Contribute</a>
+   &bull;
+    🌐 <a href="https://domains.is-a.shop/" target="_blank" rel="Website noreferrer">Website</a>
+  </p>
+
+[![Stars](https://img.shields.io/github/stars/harys722/free-domains?style=for-the-badge)](https://github.com/harys722/free-domains/stargazers)
+[![Forks](https://img.shields.io/github/forks/harys722/free-domains?style=for-the-badge)](https://github.com/harys722/free-domains/network/members)
+
 </div>
+
 
 <br />
 <hr />
@@ -39,6 +47,7 @@
  | [is-truly-a.pro](https://is-truly-a.pro/) | Free `is-truly-a.pro` subdomains, available for everyone! | [is-truly-a-pro/register](https://github.com/is-truly-a-pro/register) <br><br> ![GitHub stars](https://img.shields.io/github/stars/is-truly-a-pro/register?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/is-truly-a-pro/register?style=flat&label=Forks) | ✅ |
  | [is-not.cool](https://is-not.cool/) | Get your own 'is-not.cool' subdomain! | [is-not-cool/registration](https://github.com/is-not-cool/registration) <br><br> ![GitHub stars](https://img.shields.io/github/stars/is-not-cool/registration?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/is-not-cool/registration?style=flat&label=Forks) | ✅ |
  | [is-a.shop](https://is-a.shop/) | Get is-a.shop subdomain for your shop. | [is-a-shop/register](https://github.com/is-a-shop/register) <br><br> ![GitHub stars](https://img.shields.io/github/stars/is-a-shop/register?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/is-a-shop/register?style=flat&label=Forks) | ✅ |
+ | [is-an.ai](https://is-an.ai/) | 🤖 Free .is-an.ai subdomains for AI projects. No DNS config, no waiting. | [is-an-ai/is-an.ai](https://github.com/is-an-ai/is-an.ai) <br><br> ![GitHub stars](https://img.shields.io/github/stars/is-an-ai/is-an.ai?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/is-an-ai/is-an.ai?style=flat&label=Forks) | ✅ |
  | [is-cod.in](https://is-cod.in/) | Get your website a professional touch with a free is-cod.in domain! | [is-cod-in/register](https://github.com/is-cod-in/register) <br><br> ![GitHub stars](https://img.shields.io/github/stars/is-cod-in/register?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/is-cod-in/register?style=flat&label=Forks) | ✅ |
  | [thedev.id](https://thedev.id/) | An identity for developers on the web. | [thedev-id/thedev.id](https://github.com/thedev-id/thedev.id) <br><br> ![GitHub stars](https://img.shields.io/github/stars/thedev-id/thedev.id?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/thedev-id/thedev.id?style=flat&label=Forks)| ✅ |
  | [thedev.me](https://thedev.me/) | Get your free '{name}.thedev.me' domain. | [thedev-me/register](https://github.com/thedev-me/register) <br><br> ![GitHub stars](https://img.shields.io/github/stars/thedev-me/register?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/thedev-me/register?style=flat&label=Forks)| ✅ |
@@ -66,4 +75,4 @@
 This project is licensed under the [MIT License](LICENSE).
 <br>
 <br>
-⬆️ [**Back to Top**](#-free-domains)
+⬆️ [**Back to Top**](#top)
