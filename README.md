@@ -30,6 +30,19 @@
 <br />
 <br />
 
+<div align="center">
+  <h2>List of Free Domains Services</h2>
+
+  📋 All Domains Services: **39**
+  &bull;
+  ✅ Available: **29**
+  &bull;
+  ❌ Unavailable: **10**
+
+</div>
+
+<br />
+
 <!-- START LIST -->
  | Domain | About | Repository | Availability | 
  |--------|-------|------------|----------------|
@@ -58,6 +71,11 @@
  | [part-of.my.id/](https://part-of.my.id/) | your own personal id (`part-of.my.id`) for your website. | [partofmyid/register](https://github.com/partofmyid/register) <br><br> ![GitHub stars](https://img.shields.io/github/stars/partofmyid/register?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/partofmyid/register?style=flat&label=Forks) | ✅ |
  | [lgbt.sh](https://lgbt.sh/) | Free lgbt.sh sub-domain registration service. | [lgbt-sh/lgbt-sh](https://github.com/lgbt-sh/lgbt-sh) <br><br> ![GitHub stars](https://img.shields.io/github/stars/lgbt-sh/lgbt-sh?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/lgbt-sh/lgbt-sh?style=flat&label=Forks) | ✅ |
  | [zone.id](https://zone.id/) | Zone.ID is a premium subdomain provider as an alternative to the traditional .id TLD. | — | ✅ |
+ | [cli.rs](https://cli.rs/) | .RS is an expensive domain. Use {yourproject}.cli.rs for your Rust projects! | [zackify/cli.rs](https://github.com/zackify/cli.rs) <br><br> ![GitHub stars](https://img.shields.io/github/stars/zackify/cli.rs?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/zackify/cli.rs?style=flat&label=Forks) | ✅ |
+ | [mod.land](https://mod.land/) | 📦 Pretty subdomains for you deno project. | [denosaurs/mod.land](https://github.com/denosaurs/mod.land) <br><br> ![GitHub stars](https://img.shields.io/github/stars/denosaurs/mod.land?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/denosaurs/mod.land?style=flat&label=Forks) | ✅ |
+ | [env.pm](https://env.pm/) | Use the env.pm / jsx.pm subdomains for your projects or personal use. | — | ✅ |
+ | [yeet.su](https://yeet.su/) | Launch your web app with a free subdomain on yeet.su. No hidden fees, just simple hosting. | — | ✅ |
+ | [jsid.dev](https://jsid.dev/) | JSID.DEV is a free identity for developers on the web. This service offers a handy subdomain like foo.jsid.dev or bar.jsid.dev for use on your static sites via CNAME record. | [voidsnam/jsid.dev](https://github.com/voidsnam/jsid.dev) <br><br> ![GitHub stars](https://img.shields.io/github/stars/zackify/cli.rs?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/voidsnam/jsid.dev?style=flat&label=Forks) | ❌ |
  | [cluster.ws](https://cluster.ws/) & [wip.la](https://wip.la/) | Get a cluster.ws & wip.la domain for free and instantly | [Olivr/free-domain](https://github.com/Olivr/free-domain) <br><br> ![GitHub stars](https://img.shields.io/github/stars/Olivr/free-domain?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/Olivr/free-domain?style=flat&label=Forks) | ❌ |
  | [nyc.mn](https://dot.nyc.mn/) | Stand out in the digital world with a .NYC.mn domain, crafted to showcase your unique connection to New York City. Whether you’re a local New Yorker or a business in the city that never sleeps, this domain makes your online presence unmistakably tied to one of the most iconic cities on the planet. | — | ❌ |
  | [is-an.app](https://is-an.app/) |  🌐 DNS configuration for some of my domains. (Not available anymore) | [tarampampam/free-domains](https://github.com/tarampampam/free-domains) <br><br> ![GitHub stars](https://img.shields.io/github/stars/tarampampam/free-domains?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/tarampampam/free-domains?style=flat&label=Forks) | ❌  |
