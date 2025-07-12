@@ -176,6 +176,41 @@ const domainsData = [
         available: true
     },
     {
+        name: "cli.rs",
+        url: "https://cli.rs/",
+        description: ".RS is an expensive domain. Use {yourproject}.cli.rs for your Rust projects!",
+        repo: "zackify/cli.rs",
+        available: true
+    },
+    {
+        name: "mod.land",
+        url: "https://mod.land/",
+        description: "📦 Pretty subdomains for you deno project.",
+        repo: "denosaurs/mod.land",
+        available: true
+    },
+    {
+        name: "env.pm",
+        url: "https://env.pm/",
+        description: "Use the 'env.pm' / 'jsx.pm' subdomains for your projects or personal use.",
+        repo: null,
+        available: true
+    },
+    {
+        name: "yeet.su",
+        url: "https://yeet.su/",
+        description: "Launch your web app with a free subdomain on yeet.su. No hidden fees, just simple hosting.",
+        repo: null,
+        available: true
+    },
+    {
+        name: "jsid.dev",
+        url: "https://jsid.dev/",
+        description: "JSID.DEV is a free identity for developers on the web. This service offers a handy subdomain like foo.jsid.dev or bar.jsid.dev for use on your static sites via CNAME record.",
+        repo: "voidsnam/jsid.dev",
+        available: false
+    },
+    {
         name: "cluster.ws & wip.la",
         url: "https://cluster.ws/",
         description: "Get a cluster.ws & wip.la domain for free and instantly",
