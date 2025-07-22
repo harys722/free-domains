@@ -204,6 +204,13 @@ const domainsData = [
         available: true
     },
     {
+        name: "creepers.sbs & creepers.cloud",
+        url: "https://creepers.sbs/",
+        description: "You can register your '.creepers.sbs' / '.creepers.cloud' subdomain completely free.",
+        repo: "creepersbs/register",
+        available: true
+    },
+    {
         name: "jsid.dev",
         url: "https://jsid.dev/",
         description: "JSID.DEV is a free identity for developers on the web. This service offers a handy subdomain like foo.jsid.dev or bar.jsid.dev for use on your static sites via CNAME record.",
@@ -213,7 +220,7 @@ const domainsData = [
     {
         name: "cluster.ws & wip.la",
         url: "https://cluster.ws/",
-        description: "Get a cluster.ws & wip.la domain for free and instantly",
+        description: "Get a cluster.ws & wip.la domain for free and instantly.",
         repo: "Olivr/free-domain",
         available: false
     },
