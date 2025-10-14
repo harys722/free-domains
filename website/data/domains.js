@@ -267,6 +267,13 @@ const domainsData = [
         available: false
     },
     {
+        name: "stole-my.id",
+        url: "https://stole-my.id/",
+        description: "stole-my.id is a silly domain made for the silly people!",
+        repo: "stole-my-id/registration",
+        available: false
+    },
+    {
         name: "tilde.tk",
         url: "https://tilde.tk/",
         description: "In need of a cool subdomain? And want it to be your own UNIX home directory? Then tilde.tk (~.tk) is right for you",
