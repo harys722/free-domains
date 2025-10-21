@@ -211,6 +211,13 @@ const domainsData = [
         available: true
     },
     {
+        name: "is-a.software",
+        url: "https://is-a.software/",
+        description: "Get your free .is-a.software subdomain for developers. Perfect for side projects, demos, and showcasing your work to the world.",
+        repo: "is-a-software/software",
+        available: true
+    },
+    {
         name: "jsid.dev",
         url: "https://jsid.dev/",
         description: "JSID.DEV is a free identity for developers on the web. This service offers a handy subdomain like foo.jsid.dev or bar.jsid.dev for use on your static sites via CNAME record.",
