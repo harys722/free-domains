@@ -35,9 +35,9 @@
 
   📋 All Domains Services: **42**
   &bull;
-  ✅ Available: **31**
+  ✅ Available: **30**
   &bull;
-  ❌ Unavailable: **10**
+  ❌ Unavailable: **11**
 
 </div>
 
@@ -57,7 +57,6 @@
  | [foo.ng](https://foo.ng/) | Free `foo.ng` subdomains for everyone. | [Pokymon/foo.ng](https://github.com/Pokymon/foo.ng) <br><br> ![GitHub stars](https://img.shields.io/github/stars/Pokymon/foo.ng?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/Pokymon/foo.ng?style=flat&label=Forks) | ✅ |
  | [Is-Cool-Me](https://registry.openhost.uk/) | Free subdomains for personal sites, open-source projects, and more, offering subdomains on `is-epic.me` and  `is-awsm.tech`. | — | ✅ |
  | [is-a-good.dev](https://is-a-good.dev/) | Register for your is-a-good.dev domain! | [is-a-good-dev/register](https://github.com/is-a-good-dev/register) <br><br> ![GitHub stars](https://img.shields.io/github/stars/is-a-good-dev/register?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/is-a-good-dev/register?style=flat&label=Forks) | ✅ |
- | [is-truly-a.pro](https://is-truly-a.pro/) | Free `is-truly-a.pro` subdomains, available for everyone! | [is-truly-a-pro/register](https://github.com/is-truly-a-pro/register) <br><br> ![GitHub stars](https://img.shields.io/github/stars/is-truly-a-pro/register?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/is-truly-a-pro/register?style=flat&label=Forks) | ✅ |
  | [is-not.cool](https://is-not.cool/) | Get your own 'is-not.cool' subdomain! | [is-not-cool/registration](https://github.com/is-not-cool/registration) <br><br> ![GitHub stars](https://img.shields.io/github/stars/is-not-cool/registration?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/is-not-cool/registration?style=flat&label=Forks) | ✅ |
  | [is-a.shop](https://is-a.shop/) | Get is-a.shop subdomain for your shop. | [is-a-shop/register](https://github.com/is-a-shop/register) <br><br> ![GitHub stars](https://img.shields.io/github/stars/is-a-shop/register?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/is-a-shop/register?style=flat&label=Forks) | ✅ |
  | [is-an.ai](https://is-an.ai/) | 🤖 Free .is-an.ai subdomains for AI projects. No DNS config, no waiting. | [is-an-ai/is-an.ai](https://github.com/is-an-ai/is-an.ai) <br><br> ![GitHub stars](https://img.shields.io/github/stars/is-an-ai/is-an.ai?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/is-an-ai/is-an.ai?style=flat&label=Forks) | ✅ |
@@ -77,6 +76,7 @@
  | [yeet.su](https://yeet.su/) | Launch your web app with a free subdomain on yeet.su. No hidden fees, just simple hosting. | — | ✅ |
  | [creepers.sbs](https://creepers.sbs/) | You can register your `.creepers.sbs` / `.creepers.cloud` subdomain completely free. | [creepersbs/register](https://github.com/creepersbs/register) <br><br> ![GitHub stars](https://img.shields.io/github/stars/creepersbs/register?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/creepersbs/register?style=flat&label=Forks) | ✅ |
   | [is-a.software](https://is-a.software/) | Get your free .is-a.software subdomain for developers. Perfect for side projects, demos, and showcasing your work to the world. | [is-a-software/is-a-software](https://github.com/is-a-software/is-a-software) <br><br> ![GitHub stars](https://img.shields.io/github/stars/is-a-software/is-a-software?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/is-a-software/is-a-software?style=flat&label=Forks) | ✅ |
+   | [is-truly-a.pro](https://is-truly-a.pro/) | Free `is-truly-a.pro` subdomains, available for everyone! | [is-truly-a-pro/register](https://github.com/is-truly-a-pro/register) <br><br> ![GitHub stars](https://img.shields.io/github/stars/is-truly-a-pro/register?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/is-truly-a-pro/register?style=flat&label=Forks) | ❌ |
  | [jsid.dev](https://jsid.dev/) | JSID.DEV is a free identity for developers on the web. This service offers a handy subdomain like foo.jsid.dev or bar.jsid.dev for use on your static sites via CNAME record. | [voidsnam/jsid.dev](https://github.com/voidsnam/jsid.dev) <br><br> ![GitHub stars](https://img.shields.io/github/stars/zackify/cli.rs?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/voidsnam/jsid.dev?style=flat&label=Forks) | ❌ |
  | [cluster.ws](https://cluster.ws/) & [wip.la](https://wip.la/) | Get a cluster.ws & wip.la domain for free and instantly | [Olivr/free-domain](https://github.com/Olivr/free-domain) <br><br> ![GitHub stars](https://img.shields.io/github/stars/Olivr/free-domain?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/Olivr/free-domain?style=flat&label=Forks) | ❌ |
  | [nyc.mn](https://dot.nyc.mn/) | Stand out in the digital world with a .NYC.mn domain, crafted to showcase your unique connection to New York City. Whether you’re a local New Yorker or a business in the city that never sleeps, this domain makes your online presence unmistakably tied to one of the most iconic cities on the planet. | — | ❌ |
