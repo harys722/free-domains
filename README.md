@@ -33,9 +33,9 @@
 <div align="center">
   <h2>List of Free Domains Services</h2>
 
-  📋 All Domains Services: **41**
+  📋 All Domains Services: **42**
   &bull;
-  ✅ Available: **30**
+  ✅ Available: **31**
   &bull;
   ❌ Unavailable: **10**
 
