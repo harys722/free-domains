@@ -78,13 +78,6 @@ const domainsData = [
         available: true
     },
     {
-        name: "is-truly-a.pro",
-        url: "https://is-truly-a.pro/",
-        description: "Free is-truly-a.pro subdomains, available for everyone!",
-        repo: "is-truly-a-pro/register",
-        available: true
-    },
-    {
         name: "is-not.cool",
         url: "https://is-not.cool/",
         description: "Get your own 'is-not.cool' subdomain!",
@@ -216,6 +209,13 @@ const domainsData = [
         description: "Get your free .is-a.software subdomain for developers. Perfect for side projects, demos, and showcasing your work to the world.",
         repo: "is-a-software/software",
         available: true
+    },
+    {
+        name: "is-truly-a.pro",
+        url: "https://is-truly-a.pro/",
+        description: "Free is-truly-a.pro subdomains, available for everyone!",
+        repo: "is-truly-a-pro/register",
+        available: false
     },
     {
         name: "jsid.dev",
