@@ -158,7 +158,7 @@ const domainsData = [
         name: "lgbt.sh",
         url: "https://lgbt.sh/",
         description: "Free lgbt.sh sub-domain registration service.",
-        repo: "lgbt-sh/lgbt-sh",
+        repo: "lgbt-sh/lgbt-sh-v1",
         available: true
     },
     {
