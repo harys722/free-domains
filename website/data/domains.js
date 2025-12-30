@@ -232,11 +232,11 @@ const domainsData = [
         available: false
     },
     {
-        name: "nyc.mn",
-        url: "https://dot.nyc.mn/",
-        description: "Stand out in the digital world with a .NYC.mn domain, crafted to showcase your unique connection to New York City.",
+        name: "PublicZone.org",
+        url: "https://PublicZone.org/",
+        description: "Free subdomains across multiple SLDs (.nyc.mn, .cn.st with Mozilla PSL support), funded through charitable donations or the GitHub Developers Program - offering free subdomains to developers who operate a GitHub repository with 100+ stars.",
         repo: null,
-        available: false
+        available: true
     },
     {
         name: "is-an.app",
