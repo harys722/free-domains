@@ -16,7 +16,7 @@
     &bull;
     🤝 <a href="https://github.com/harys722/free-domains/blob/main/CONTRIBUTING.md">Contribute</a>
    &bull;
-    🌐 <a href="https://domains.is-a.shop/" target="_blank" rel="Website noreferrer">Website</a>
+    🌐 <a href="https://harys722.github.io/free-domains/" target="_blank" rel="Website noreferrer">Website</a>
   </p>
 
 [![Stars](https://img.shields.io/github/stars/harys722/free-domains?style=for-the-badge)](https://github.com/harys722/free-domains/stargazers)
