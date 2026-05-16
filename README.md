@@ -35,9 +35,9 @@
 
   📋 All Domains Services: **42**
   &bull;
-  ✅ Available: **30**
+  ✅ Available: **27**
   &bull;
-  ❌ Unavailable: **12**
+  ❌ Unavailable: **15**
 
 </div>
 
