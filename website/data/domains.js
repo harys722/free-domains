@@ -50,13 +50,6 @@ const domainsData = [
         available: true
     },
     {
-        name: "SubFree Project",
-        url: "https://now-is.online/",
-        description: "SubFree is a free and simple subdomain service inspired by is-a.dev designed for developers, creators, and builders who want custom subdomains.",
-        repo: "rubahilang/SubFree-Project",
-        available: true
-    },
-    {
         name: "foo.ng",
         url: "https://foo.ng/",
         description: "Free foo.ng subdomains for everyone.",
@@ -89,13 +82,6 @@ const domainsData = [
         url: "https://is-a.shop/",
         description: "Get is-a.shop subdomain for your shop.",
         repo: "is-a-shop/register",
-        available: true
-    },
-    {
-        name: "is-an.ai",
-        url: "https://is-an.ai/",
-        description: "🤖 Free .is-an.ai subdomains for AI projects. No DNS config, no waiting.",
-        repo: "is-an-ai/is-an.ai",
         available: true
     },
     {
@@ -176,23 +162,9 @@ const domainsData = [
         available: true
     },
     {
-        name: "mod.land",
-        url: "https://mod.land/",
-        description: "📦 Pretty subdomains for you deno project.",
-        repo: "denosaurs/mod.land",
-        available: true
-    },
-    {
         name: "env.pm",
         url: "https://env.pm/",
         description: "Use the 'env.pm' / 'jsx.pm' subdomains for your projects or personal use.",
-        repo: null,
-        available: true
-    },
-    {
-        name: "yeet.su",
-        url: "https://yeet.su/",
-        description: "Launch your web app with a free subdomain on yeet.su. No hidden fees, just simple hosting.",
         repo: null,
         available: true
     },
@@ -207,7 +179,7 @@ const domainsData = [
         name: "is-a.software",
         url: "https://is-a.software/",
         description: "Get your free .is-a.software subdomain for developers. Perfect for side projects, demos, and showcasing your work to the world.",
-        repo: "is-a-software/software",
+        repo: "is-a-software/is-a-software",
         available: true
     },
     {
@@ -218,10 +190,31 @@ const domainsData = [
         available: false
     },
     {
+        name: "mod.land",
+        url: "https://mod.land/",
+        description: "📦 Pretty subdomains for you deno project.",
+        repo: "denosaurs/mod.land",
+        available: false
+    },
+    {
+        name: "is-an.ai",
+        url: "https://is-an.ai/",
+        description: "🤖 Free .is-an.ai subdomains for AI projects. No DNS config, no waiting.",
+        repo: "is-an-ai/is-an.ai",
+        available: false
+    },
+    {
         name: "jsid.dev",
         url: "https://jsid.dev/",
         description: "JSID.DEV is a free identity for developers on the web. This service offers a handy subdomain like foo.jsid.dev or bar.jsid.dev for use on your static sites via CNAME record.",
         repo: "voidsnam/jsid.dev",
+        available: false
+    },
+    {
+        name: "SubFree Project",
+        url: "https://now-is.online/",
+        description: "SubFree is a free and simple subdomain service inspired by is-a.dev designed for developers, creators, and builders who want custom subdomains.",
+        repo: "rubahilang/SubFree-Project",
         available: false
     },
     {
@@ -243,6 +236,13 @@ const domainsData = [
         url: "https://is-an.app/",
         description: "🌐 DNS configuration for some of my domains. (Not available anymore)",
         repo: "tarampampam/free-domains",
+        available: false
+    },
+    {
+        name: "yeet.su",
+        url: "https://yeet.su/",
+        description: "Launch your web app with a free subdomain on yeet.su. No hidden fees, just simple hosting.",
+        repo: null,
         available: false
     },
     {
