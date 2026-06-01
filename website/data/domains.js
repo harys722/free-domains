@@ -293,6 +293,20 @@ const domainsData = [
         description: "Are you weeb developer looking for free webspace to host your project? Get free subdomain merahputih.moe UwU",
         repo: "ScathachGrip/merahputih.moe",
         available: false
+    },
+    {
+        name: "addictedto.beer",
+        url: "https://addictedto.beer/",
+        description: "Free addictedto.beer subdomains for everyone.",
+        repo: "TinyBrickBoy/register",
+        available: true
+    },
+    {
+        name: "skillissue.gg",
+        url: "https://skillissue.gg/",
+        description: "Free skillissue.gg subdomains for everyone.",
+        repo: "TinyBrickBoy/register",
+        available: true
     }
 ];
 
