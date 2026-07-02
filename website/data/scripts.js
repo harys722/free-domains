@@ -1,4 +1,5 @@
-let filteredDomains = [...domainsData], currentFilter = 'all', currentSearchTerm = '', currentLink = null, currentView = localStorage.getItem('domainView') || 'gallery';
+let domainsData = [];
+let filteredDomains = [], currentFilter = 'all', currentSearchTerm = '', currentLink = null, currentView = localStorage.getItem('domainView') || 'gallery';
         const searchInput = document.getElementById('searchInput'),
               clearSearchBtn = document.getElementById('clearSearch'),
               domainsGrid = document.getElementById('domainsGrid'),
@@ -14,7 +15,30 @@ let filteredDomains = [...domainsData], currentFilter = 'all', currentSearchTerm
               cancelLinkBtn = document.getElementById('cancelLink'),
               listViewBtn = document.getElementById('listViewBtn'),
               galleryViewBtn = document.getElementById('galleryViewBtn'),
-              resetViewBtn = document.getElementById('resetViewBtn');
+              resetViewBtn = document.getElementById('resetViewBtn'),
+              domainCountBadge = document.getElementById('domainCountBadge');
+        async function loadDomainsData() {
+            try {
+                const response = await fetch('data/subdomains.json');
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                const raw = await response.json();
+                // Available first, unavailable last — consistent with README
+                domainsData = raw.sort((a, b) => {
+                    if (a.available === b.available) return 0;
+                    return a.available ? -1 : 1;
+                });
+            } catch (err) {
+                console.error('Failed to load subdomains.json:', err);
+                domainsData = [];
+            }
+            filteredDomains = [...domainsData];
+            updateDomainCountBadge();
+        }
+        function updateDomainCountBadge() {
+            if (domainCountBadge) {
+                domainCountBadge.textContent = `📊 ${domainsData.length}+ Free Domain Services`;
+            }
+        }
         function initializeTheme() {
             const theme = localStorage.getItem('theme') || 'light';
             document.documentElement.setAttribute('data-theme', theme);
@@ -252,10 +276,12 @@ let filteredDomains = [...domainsData], currentFilter = 'all', currentSearchTerm
                 timeout = setTimeout(() => func(...args), wait);
             };
         }
-        document.addEventListener('DOMContentLoaded', () => {
+        document.addEventListener('DOMContentLoaded', async () => {
             initializeTheme();
             initializeView();
+            await loadDomainsData();
             renderDomains();
+            updateSearchResults();
             initializeEventListeners();
             hideLoadingScreen();
         });
