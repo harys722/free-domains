@@ -306,5 +306,180 @@
     "description": "Free skillissue.gg subdomains for everyone.",
     "repo": "TinyBrickBoy/register",
     "available": false
+  },
+  {
+    "name": "ill.my.id",
+    "url": "https://ill.my.id/",
+    "description": "Free, tiny and memorable ill.my.id subdomain service by w3teal.",
+    "repo": "w3teal/ill.my.id",
+    "available": true
+  },
+  {
+    "name": "iz.rs",
+    "url": "https://iz.rs/registracija_domena",
+    "description": "A free iz.rs subdomain for everyone.",
+    "repo": null,
+    "available": true
+  },
+  {
+    "name": "domain.stackryze.com",
+    "url": "https://domain.stackryze.com/",
+    "description": "Stackryze Domains: '.indevs.in' '.sryze.cc' '.ryzedns.org' '.nx.kg'",
+    "repo": "stackryze/FreeDomains",
+    "available": true
+  },
+  {
+    "name": "vexr.dev",
+    "url": "https://vexr.dev/",
+    "description": "Free, developer-first .vexr.dev subdomains with custom DNS management and Cloudflare proxy support.",
+    "repo": "nerkoux/vexr.dev",
+    "available": true
+  },
+  {
+    "name": "is-local.host",
+    "url": "https://is-local.host/",
+    "description": "Free is-local.host subdomain provided by the vexr.dev subdomain service.",
+    "repo": "nerkoux/vexr.dev",
+    "available": true
+  },
+  {
+    "name": "devs.surf",
+    "url": "https://devs.surf/",
+    "description": "Free devs.surf subdomain for everyone.",
+    "repo": "ByteLogicLabs/Free-Domains",
+    "available": true
+  },
+  {
+    "name": "www.dnshe.com",
+    "url": "https://www.dnshe.com/",
+    "description": "🌐 DNSHE Official - Stable & Free Subdomains for Developers. Support 180-day renewal window, Anycast DNS, and REST API. (us.ci, cc.cd, de5.net, ccwu.cc)",
+    "repo": "dnshe/DNSHE-FreeDomains",
+    "available": true
+  },
+  {
+    "name": "getxyz.de",
+    "url": "https://getxyz.de/",
+    "description": "Free *.getxyz.de subdomains for developers — one PR away. 🚀",
+    "repo": "blackredit/register",
+    "available": true
+  },
+  {
+    "name": "estin.pro",
+    "url": "https://estin.pro/",
+    "description": "Get your own free subdomain on estin.pro! Perfect for personal projects, portfolios, demos, and prototypes.",
+    "repo": "Kadacheahmedrami/estin.pro",
+    "available": false
+  },
+  {
+    "name": "agentdomains.co",
+    "url": "https://agentdomains.co/",
+    "description": "Free agentdomains.co subdomains for everyone.",
+    "repo": "tashfeenahmed/AgentDomains",
+    "available": true
+  },
+  {
+    "name": "makes.fyi",
+    "url": "http://makes.fyi/",
+    "description": "Free makes.fyi subdomains for everyone by AgentDomains.",
+    "repo": "tashfeenahmed/AgentDomains",
+    "available": true
+  },
+  {
+    "name": "eu.cc",
+    "url": "https://www.gname.com/tld-eu-cc.html",
+    "description": "GNAME Free Domain Program offers free domain registration and reliable DNS services for developers, startups, students, and businesses, making it easy to launch websites and online projects with zero cost.",
+    "repo": "GNDevProd/FreeDomain",
+    "available": true
+  },
+  {
+    "name": "moe.page",
+    "url": "https://moe.page/",
+    "description": "moe.page is a free, open, and automated subdomain distribution project designed to provide a cute and memorable domain name for your personal project, blog, homepage, or any interesting idea.",
+    "repo": "zknmoe/moe.page-subdomains",
+    "available": true
+  },
+  {
+    "name": "iths.online",
+    "url": "https://iths.online/",
+    "description": "This project provides free subdomains for students to host their portfolios, open-source projects, and personal websites.",
+    "repo": "harinandsindukumar/free.iths.online",
+    "available": true
+  },
+  {
+    "name": "int.yt",
+    "url": "https://int.yt/",
+    "description": "Free, short, and permanent subdomains for developers and creators.",
+    "repo": "intentfreedomain/FreeDomain",
+    "available": true
+  },
+  {
+    "name": "isroot.in",
+    "url": "https://isroot.in/",
+    "description": "A free, open-source subdomain service for developers to launch APIs, demos, and side projects without buying a domain",
+    "repo": "nevercode-in/FreeDomains",
+    "available": true
+  },
+  {
+    "name": "is-app.top",
+    "url": "https://is-app.top/",
+    "description": "Free, forever, and yours. Grab your '.is-app.top' today.",
+    "repo": "is-app-top/register",
+    "available": false
+  },
+  {
+    "name": "id.thatako.net",
+    "url": "https://id.thatako.net/",
+    "description": "Grab free domain [name].id.thatako.net.",
+    "repo": "aitji/id.thatako.net",
+    "available": true
+  },
+  {
+    "name": "nameforge.rf.gd",
+    "url": "https://nameforge.rf.gd/",
+    "description": "NameForge is a free, community-driven subdomain registry — claim your own developer subdomain under our collection of unique domains.",
+    "repo": "NameForge-Free-Domain/register",
+    "available": true
+  },
+  {
+    "name": "is-a.tech",
+    "url": "https://is-a.tech/",
+    "description": "Free domains is-a.tech.",
+    "repo": "isatechy/is-a.tech",
+    "available": false
+  },
+  {
+    "name": "illust.bio",
+    "url": "https://illust.bio/",
+    "description": "Free domains for illustrators (or anyone related to illustrations).",
+    "repo": "illust-bio/illust.bio",
+    "available": false
+  },
+  {
+    "name": "twente.me",
+    "url": "https://twente.me/",
+    "description": "Twente.me is the Twente community domain. If you're building a website for an organization, event, place, etc., in the innovative region of Twente in Overijssel, you can get a free yourname.twente.me domain for it.",
+    "repo": "twente-me/twente.me",
+    "available": false
+  },
+  {
+    "name": "makesome.cool",
+    "url": "https://makesome.cool/",
+    "description": "Free subdomains for your interesting open-source projects. Join us and “Make Some Cool”",
+    "repo": "1834423612/makesome.cool",
+    "available": false
+  },
+  {
+    "name": "singlebucks.live",
+    "url": "https://www.singlebucks.live/",
+    "description": "Free singlebucks.live Domain Name for all.",
+    "repo": "MOHAMMADSHAIBAZQAISAR/get_free_domain",
+    "available": false
+  },
+  {
+    "name": "mit-license.org",
+    "url": "https://mit-license.org/",
+    "description": "Hosted MIT License with details controlled through this repo",
+    "repo": "remy/mit-license",
+    "available": true
   }
 ]
