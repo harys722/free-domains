@@ -33,9 +33,9 @@
 <div align="center">
   <h2>List of Free Domains Services</h2>
 
-  📋 All Domains Services: **69**
+  📋 All Domains Services: **70**
   &bull;
-  ✅ Available: **41**
+  ✅ Available: **42**
   &bull;
   ❌ Unavailable: **28**
 
@@ -49,6 +49,7 @@
  | [is-a.dev](https://www.is-a.dev/) | Grab your own sweet-looking '.is-a.dev' subdomain. | [is-a-dev/register](https://github.com/is-a-dev/register) <br><br> ![GitHub stars](https://img.shields.io/github/stars/is-a-dev/register?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/is-a-dev/register?style=flat&label=Forks) | ✅ |
  | [js.org](https://js.org/) | Dedicated to JavaScript and its awesome community since 2015 | [js-org/js.org](https://github.com/js-org/js.org) <br><br> ![GitHub stars](https://img.shields.io/github/stars/js-org/js.org?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/js-org/js.org?style=flat&label=Forks) | ✅ |
  | [Open Domains](https://open-domains.net) | Free subdomains for personal sites, open-source projects, and more. Offers is-cool.dev, is-a-fullstack.dev, is-local.org, is-not-a.dev, and localplayer.dev. | [open-domains/register](https://github.com/open-domains/register) <br><br> ![GitHub stars](https://img.shields.io/github/stars/open-domains/register?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/open-domains/register?style=flat&label=Forks) | ✅ |
+ | [cheapbastards](https://cheapbastards.xyz/) | Free subdomains with delegated DNS (bring your own nameservers) or managed records. Supports custom NS delegation and HTTPS verification. | — | ✅ |
  | [name.com](https://www.name.com/partner/github-students) | Name.com has partnered with GitHub to provide free domain names to students. Offering up to 10 free domains including .live, .studio .games, .software & more. | — | ✅ |
  | [DigitalPlat FreeDomain](https://domain.digitalplat.org/) | DigitalPlat FreeDomain: Free Domain For Everyone. We offers .DPDNS.ORG, .US.KG, .QZZ.IO and .XX.KG domain extensions. | [DigitalPlatDev/FreeDomain](https://github.com/DigitalPlatDev/FreeDomain) <br><br> ![GitHub stars](https://img.shields.io/github/stars/DigitalPlatDev/FreeDomain?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/DigitalPlatDev/FreeDomain?style=flat&label=Forks) | ✅ |
  | [Open Host](https://registry.openhost.uk/) | A free subdomain service offering subdomains on prvcy.page, 16-b.it, 32-b.it, 64-b.it, pride.moe and pride.ngo. | — | ✅ |
