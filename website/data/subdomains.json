@@ -56,6 +56,13 @@
     "available": true
   },
   {
+    "name": "ing.ng",
+    "url": "https://ing.ng/",
+    "description": "Free non-premium *.ing.ng subdomains with full DNS (A/AAAA/CNAME/MX/TXT/NS/SRV), claimable from the CLI (npx ingng), API, or web. No renewal fees.",
+    "repo": "kartikraichura/ingng-cli",
+    "available": true
+  },
+  {
     "name": "Is-Cool-Me",
     "url": "https://is.epic.me",
     "description": "Free subdomains for personal sites, open-source projects, and more, offering subdomains on is-epic.me and is-awsm.tech.",
