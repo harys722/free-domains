@@ -481,5 +481,12 @@
     "description": "Hosted MIT License with details controlled through this repo",
     "repo": "remy/mit-license",
     "available": true
+  },
+  {
+    "name": "fluxcast.dev",
+    "url": "https://sub.fluxcast.dev/",
+    "description": "Free GitOps-based subdomain registry for developers (*.fluxcast.dev).",
+    "repo": "IlyaP358/fluxcast-domains",
+    "available": true
   }
 ]
