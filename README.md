@@ -33,9 +33,9 @@
 <div align="center">
   <h2>List of Free Domains Services</h2>
 
-  📋 All Domains Services: **69**
+  📋 All Domains Services: **70**
   &bull;
-  ✅ Available: **41**
+  ✅ Available: **42**
   &bull;
   ❌ Unavailable: **28**
 
@@ -87,6 +87,7 @@
  | [id.thatako.net](https://id.thatako.net/) | Grab free domain [name].id.thatako.net. | [aitji/id.thatako.net](https://github.com/aitji/id.thatako.net) <br><br> ![GitHub stars](https://img.shields.io/github/stars/aitji/id.thatako.net?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/aitji/id.thatako.net?style=flat&label=Forks) | ✅ |
  | [nameforge.rf.gd](https://nameforge.rf.gd/) | NameForge is a free, community-driven subdomain registry — claim your own developer subdomain under our collection of unique domains. | [NameForge-Free-Domain/register](https://github.com/NameForge-Free-Domain/register) <br><br> ![GitHub stars](https://img.shields.io/github/stars/NameForge-Free-Domain/register?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/NameForge-Free-Domain/register?style=flat&label=Forks) | ✅ |
  | [mit-license.org](https://mit-license.org/) | Hosted MIT License with details controlled through this repo | [remy/mit-license](https://github.com/remy/mit-license) <br><br> ![GitHub stars](https://img.shields.io/github/stars/remy/mit-license?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/remy/mit-license?style=flat&label=Forks) | ✅ |
+ | [fluxcast.dev](https://sub.fluxcast.dev/) | Free GitOps-based subdomain registry for developers (*.fluxcast.dev). | [IlyaP358/fluxcast-domains](https://github.com/IlyaP358/fluxcast-domains) <br><br> ![GitHub stars](https://img.shields.io/github/stars/IlyaP358/fluxcast-domains?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/IlyaP358/fluxcast-domains?style=flat&label=Forks) | ✅ |
  | [Domains Project](https://getyourfree.space/) | Free developer subdomains under owns.it.com, with more domains coming soon. | [domainsproject/register](https://github.com/domainsproject/register) <br><br> ![GitHub stars](https://img.shields.io/github/stars/domainsproject/register?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/domainsproject/register?style=flat&label=Forks) | ❌ |
  | [is-a.shop](https://is-a.shop/) | Get is-a.shop subdomain for your shop. | [is-a-shop/register](https://github.com/is-a-shop/register) <br><br> ![GitHub stars](https://img.shields.io/github/stars/is-a-shop/register?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/is-a-shop/register?style=flat&label=Forks) | ❌ |
  | [lgbt.sh](https://lgbt.sh/) | Free lgbt.sh sub-domain registration service. | [lgbt-sh/lgbt-sh-v1](https://github.com/lgbt-sh/lgbt-sh-v1) <br><br> ![GitHub stars](https://img.shields.io/github/stars/lgbt-sh/lgbt-sh-v1?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/lgbt-sh/lgbt-sh-v1?style=flat&label=Forks) | ❌ |
