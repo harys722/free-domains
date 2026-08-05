@@ -7,6 +7,13 @@
     "available": true
   },
   {
+    "name": "is-a.bot",
+    "url": "https://www.is-a.bot/",
+    "description": "Grab your own sweet-looking '.is-a.bot' subdomain.",
+    "repo": "free-domains/is-a.bot",
+    "available": true
+  },
+  {
     "name": "js.org",
     "url": "https://js.org/",
     "description": "Dedicated to JavaScript and its awesome community since 2015",
