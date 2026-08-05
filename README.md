@@ -33,9 +33,9 @@
 <div align="center">
   <h2>List of Free Domains Services</h2>
 
-  📋 All Domains Services: **70**
+  📋 All Domains Services: **71**
   &bull;
-  ✅ Available: **42**
+  ✅ Available: **43**
   &bull;
   ❌ Unavailable: **28**
 
@@ -47,6 +47,7 @@
  | Domain | About | Repository | Availability | 
  |--------|-------|------------|----------------|
  | [is-a.dev](https://www.is-a.dev/) | Grab your own sweet-looking '.is-a.dev' subdomain. | [is-a-dev/register](https://github.com/is-a-dev/register) <br><br> ![GitHub stars](https://img.shields.io/github/stars/is-a-dev/register?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/is-a-dev/register?style=flat&label=Forks) | ✅ |
+ | [is-a.bot](https://www.is-a.bot/) | Grab your own sweet-looking '.is-a.bot' subdomain. | [free-domains/is-a.bot](https://github.com/free-domains/is-a.bot) <br><br> ![GitHub stars](https://img.shields.io/github/stars/free-domains/is-a.bot?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/free-domains/is-a.bot?style=flat&label=Forks) | ✅ |
  | [js.org](https://js.org/) | Dedicated to JavaScript and its awesome community since 2015 | [js-org/js.org](https://github.com/js-org/js.org) <br><br> ![GitHub stars](https://img.shields.io/github/stars/js-org/js.org?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/js-org/js.org?style=flat&label=Forks) | ✅ |
  | [Open Domains](https://open-domains.net) | Free subdomains for personal sites, open-source projects, and more. Offers is-cool.dev, is-a-fullstack.dev, is-local.org, is-not-a.dev, and localplayer.dev. | [open-domains/register](https://github.com/open-domains/register) <br><br> ![GitHub stars](https://img.shields.io/github/stars/open-domains/register?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/open-domains/register?style=flat&label=Forks) | ✅ |
  | [name.com](https://www.name.com/partner/github-students) | Name.com has partnered with GitHub to provide free domain names to students. Offering up to 10 free domains including .live, .studio .games, .software & more. | — | ✅ |
