@@ -1,0 +1,16 @@
+{
+    "description": "Short custom URL for my Azure app",
+    "repo": "https://github.com/moshebeider3-png/free-domains",
+    "owner": {
+        "username": "moshebeider3-png",
+        "email": "moshebeider3@gmail.com"
+    },
+    "record": {
+        "CNAME": "connect-ai.mangosmoke-173545bd.eastus.azurecontainerapps.io"
+    },
+    "subdomain": {
+        "asuid": {
+            "TXT": "B9E13A247009D65A963BA63B51196FFDD64435F7C2D95474D547C245F5803DA2"
+        }
+    }
+}
