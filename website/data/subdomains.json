@@ -498,7 +498,7 @@
   },
   {
     "name": "is-a.stupid.cat",
-    "url": "https://www.is-a.stupid.cat/",
+    "url": "https://is-a.stupid.cat/",
     "description": "Register for your own stupid-looking '.is-a.stupid.cat' subdomain.",
     "repo": "is-a-stupid-cat/register",
     "available": true
