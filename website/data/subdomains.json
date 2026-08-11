@@ -495,5 +495,19 @@
     "description": "Free GitOps-based subdomain registry for developers (*.fluxcast.dev).",
     "repo": "IlyaP358/fluxcast-domains",
     "available": true
+  },
+  {
+    "name": "is-a.stupid.cat",
+    "url": "https://www.is-a.stupid.cat/",
+    "description": "Register for your own stupid-looking '.is-a.stupid.cat' subdomain.",
+    "repo": "is-a-stupid-cat/register",
+    "available": true
+  },
+  {
+    "name": "4k.pics",
+    "url": "https://4k.pics/",
+    "description": "Get your own personalized subdomain at 4k.pics completely free of charge.",
+    "repo": null,
+    "available": true
   }
 ]
