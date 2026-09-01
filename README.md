@@ -33,9 +33,9 @@
 <div align="center">
   <h2>List of Free Domains Services</h2>
 
-  📋 All Domains Services: **73**
+  📋 All Domains Services: **74**
   &bull;
-  ✅ Available: **45**
+  ✅ Available: **46**
   &bull;
   ❌ Unavailable: **28**
 
@@ -65,6 +65,7 @@
  | [ngo.us](https://nic.ngo.us/) | Free subdomains exclusively for nonprofits, nongovernmental organizations (NGOs) and initiatives. | [ngo-us/registry](https://github.com/ngo-us/registry) <br><br> ![GitHub stars](https://img.shields.io/github/stars/ngo-us/registry?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/ngo-us/registry?style=flat&label=Forks) | ✅ |
  | [pp.ua](https://pp.ua/) | Free pp.ua subdomains. | — | ✅ |
  | [part-of.my.id](https://part-of.my.id/) | Your own personal id for your website. | [partofmyid/register](https://github.com/partofmyid/register) <br><br> ![GitHub stars](https://img.shields.io/github/stars/partofmyid/register?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/partofmyid/register?style=flat&label=Forks) | ✅ |
+ | [openalias.xyz](https://openalias.xyz/) | Free developer subdomains: hi-dev.pro & dev-at.net for your website. | — | ✅ |
  | [cli.rs](https://cli.rs/) | .RS is an expensive domain. Use {yourproject}.cli.rs for your Rust projects! | [zackify/cli.rs](https://github.com/zackify/cli.rs) <br><br> ![GitHub stars](https://img.shields.io/github/stars/zackify/cli.rs?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/zackify/cli.rs?style=flat&label=Forks) | ✅ |
  | [env.pm](https://env.pm/) | Use the 'env.pm' / 'jsx.pm' subdomains for your projects or personal use. | — | ✅ |
  | [creepers.sbs & creepers.cloud](https://creepers.sbs/) | You can register your '.creepers.sbs' / '.creepers.cloud' subdomain completely free. | [creepersbs/register](https://github.com/creepersbs/register) <br><br> ![GitHub stars](https://img.shields.io/github/stars/creepersbs/register?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/creepersbs/register?style=flat&label=Forks) | ✅ |
@@ -91,7 +92,6 @@
  | [fluxcast.dev](https://sub.fluxcast.dev/) | Free GitOps-based subdomain registry for developers (*.fluxcast.dev). | [IlyaP358/fluxcast-domains](https://github.com/IlyaP358/fluxcast-domains) <br><br> ![GitHub stars](https://img.shields.io/github/stars/IlyaP358/fluxcast-domains?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/IlyaP358/fluxcast-domains?style=flat&label=Forks) | ✅ |
  | [is-a.stupid.cat](https://is-a.stupid.cat/) | Register for your own stupid-looking '.is-a.stupid.cat' subdomain. | [is-a-stupid-cat/register](https://github.com/is-a-stupid-cat/register) <br><br> ![GitHub stars](https://img.shields.io/github/stars/is-a-stupid-cat/register?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/is-a-stupid-cat/register?style=flat&label=Forks) | ✅ |
  | [4k.pics](https://4k.pics/) | Get your own personalized subdomain at 4k.pics completely free of charge. | — | ✅ |
- | [openalias.xyz](https://openalias.xyz) | Register your own developer subdomains for free with no cost: `hi-dev.pro` and `dev-at.net`. | — | ✅ |
  | [Domains Project](https://getyourfree.space/) | Free developer subdomains under owns.it.com, with more domains coming soon. | [domainsproject/register](https://github.com/domainsproject/register) <br><br> ![GitHub stars](https://img.shields.io/github/stars/domainsproject/register?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/domainsproject/register?style=flat&label=Forks) | ❌ |
  | [is-a.shop](https://is-a.shop/) | Get is-a.shop subdomain for your shop. | [is-a-shop/register](https://github.com/is-a-shop/register) <br><br> ![GitHub stars](https://img.shields.io/github/stars/is-a-shop/register?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/is-a-shop/register?style=flat&label=Forks) | ❌ |
  | [lgbt.sh](https://lgbt.sh/) | Free lgbt.sh sub-domain registration service. | [lgbt-sh/lgbt-sh-v1](https://github.com/lgbt-sh/lgbt-sh-v1) <br><br> ![GitHub stars](https://img.shields.io/github/stars/lgbt-sh/lgbt-sh-v1?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/lgbt-sh/lgbt-sh-v1?style=flat&label=Forks) | ❌ |
