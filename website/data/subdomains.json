@@ -147,6 +147,13 @@
     "available": true
   },
   {
+    "name": "openalias.xyz",
+    "url": "https://openalias.xyz/",
+    "description": "Free developer subdomains: hi-dev.pro & dev-at.net for your website.",
+    "repo": null,
+    "available": true
+  },
+  {
     "name": "lgbt.sh",
     "url": "https://lgbt.sh/",
     "description": "Free lgbt.sh sub-domain registration service.",
