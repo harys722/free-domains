@@ -33,9 +33,9 @@
 <div align="center">
   <h2>List of Free Domains Services</h2>
 
-  📋 All Domains Services: **74**
+  📋 All Domains Services: **75**
   &bull;
-  ✅ Available: **46**
+  ✅ Available: **47**
   &bull;
   ❌ Unavailable: **28**
 
@@ -92,6 +92,7 @@
  | [fluxcast.dev](https://sub.fluxcast.dev/) | Free GitOps-based subdomain registry for developers (*.fluxcast.dev). | [IlyaP358/fluxcast-domains](https://github.com/IlyaP358/fluxcast-domains) <br><br> ![GitHub stars](https://img.shields.io/github/stars/IlyaP358/fluxcast-domains?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/IlyaP358/fluxcast-domains?style=flat&label=Forks) | ✅ |
  | [is-a.stupid.cat](https://is-a.stupid.cat/) | Register for your own stupid-looking '.is-a.stupid.cat' subdomain. | [is-a-stupid-cat/register](https://github.com/is-a-stupid-cat/register) <br><br> ![GitHub stars](https://img.shields.io/github/stars/is-a-stupid-cat/register?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/is-a-stupid-cat/register?style=flat&label=Forks) | ✅ |
  | [4k.pics](https://4k.pics/) | Get your own personalized subdomain at 4k.pics completely free of charge. | — | ✅ |
+ | [Public Free Suffix](https://publicfreesuffix.org/) | Non-profit free subdomains for personal sites, open-source projects and AI apps on is-a.si, pfsdns.org, nastu.net, tun.re, no.kg and so.kg, with a web console, REST API and MCP support for LLM agents. | [PublicFreeSuffix/PublicFreeSuffix](https://github.com/PublicFreeSuffix/PublicFreeSuffix) <br><br> ![GitHub stars](https://img.shields.io/github/stars/PublicFreeSuffix/PublicFreeSuffix?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/PublicFreeSuffix/PublicFreeSuffix?style=flat&label=Forks) | ✅ |
  | [Domains Project](https://getyourfree.space/) | Free developer subdomains under owns.it.com, with more domains coming soon. | [domainsproject/register](https://github.com/domainsproject/register) <br><br> ![GitHub stars](https://img.shields.io/github/stars/domainsproject/register?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/domainsproject/register?style=flat&label=Forks) | ❌ |
  | [is-a.shop](https://is-a.shop/) | Get is-a.shop subdomain for your shop. | [is-a-shop/register](https://github.com/is-a-shop/register) <br><br> ![GitHub stars](https://img.shields.io/github/stars/is-a-shop/register?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/is-a-shop/register?style=flat&label=Forks) | ❌ |
  | [lgbt.sh](https://lgbt.sh/) | Free lgbt.sh sub-domain registration service. | [lgbt-sh/lgbt-sh-v1](https://github.com/lgbt-sh/lgbt-sh-v1) <br><br> ![GitHub stars](https://img.shields.io/github/stars/lgbt-sh/lgbt-sh-v1?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/lgbt-sh/lgbt-sh-v1?style=flat&label=Forks) | ❌ |
