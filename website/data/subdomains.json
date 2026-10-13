@@ -516,5 +516,12 @@
     "description": "Get your own personalized subdomain at 4k.pics completely free of charge.",
     "repo": null,
     "available": true
+  },
+  {
+    "name": "Public Free Suffix",
+    "url": "https://nssnap.com/",
+    "description": "Non-profit free subdomains for personal sites, open-source projects and AI apps on is-a.si, pfsdns.org, nastu.net, tun.re, no.kg and so.kg, with a web console, REST API and MCP support for LLM agents.",
+    "repo": "PublicFreeSuffix/PublicFreeSuffix",
+    "available": true
   }
 ]
