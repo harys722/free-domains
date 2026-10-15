@@ -9,7 +9,7 @@
   <h1 align="center">Free Domains</h1>
 
   <p align="center">
-    A curated collection of free subdomains ideal for personal websites, open source projects, portfolio showcases, and innovative online ventures.
+    A big list of free subdomains for personal websites, portfolios, open-source projects, and other online projects.
     <br />
     <br />
     ⭐ <a href="https://github.com/harys722/free-domains">Star on GitHub</a>
