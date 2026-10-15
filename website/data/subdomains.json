@@ -523,5 +523,82 @@
     "description": "Non-profit free subdomains for personal sites, open-source projects and AI apps on is-a.si, pfsdns.org, nastu.net, tun.re, no.kg and so.kg, with a web console, REST API and MCP support for LLM agents.",
     "repo": "PublicFreeSuffix/PublicFreeSuffix",
     "available": true
+  },
+  {
+    "name": "FreeDNS (afraid.org)",
+    "url": "https://freedns.afraid.org/",
+    "description": "Free DNS hosting plus free dynamic and static subdomains on a shared registry of 23,000+ domains.",
+    "repo": null,
+    "available": true
+  },
+  {
+    "name": "Dynu",
+    "url": "https://www.dynu.com/",
+    "description": "Free dynamic DNS with a free third-level domain, or use your own domain.",
+    "repo": null,
+    "available": true
+  },
+  {
+    "name": "DuckDNS",
+    "url": "https://www.duckdns.org/",
+    "description": "Free dynamic DNS subdomains under duckdns.org.",
+    "repo": null,
+    "available": true
+  },
+  {
+    "name": "dynv6",
+    "url": "https://dynv6.com/",
+    "description": "Free IPv4 and IPv6 dynamic DNS hostnames, or delegate your own domain.",
+    "repo": null,
+    "available": true
+  },
+  {
+    "name": "FreeMyIP",
+    "url": "https://freemyip.com/",
+    "description": "Free dynamic DNS under freemyip.com, with no login or expiration.",
+    "repo": null,
+    "available": true
+  },
+  {
+    "name": "is-a.ru",
+    "url": "https://is-a.ru/",
+    "description": "Free name.is-a.ru subdomains for developers, via application form.",
+    "repo": null,
+    "available": true
+  },
+  {
+    "name": "dedyn.io (deSEC)",
+    "url": "https://desec.io/",
+    "description": "Free DNSSEC-secured dynamic DNS subdomains under dedyn.io.",
+    "repo": "desec-io/desec-stack",
+    "available": true
+  },
+  {
+    "name": "EU.org",
+    "url": "https://nic.eu.org/",
+    "description": "Free subdomain registration under eu.org, running since 1996.",
+    "repo": null,
+    "available": true
+  },
+  {
+    "name": "Intent Subdomains",
+    "url": "https://int.yt/",
+    "description": "Intent provides premium subdomains with a focus on simplicity and longevity. Available free subdomain is .int.yt.",
+    "repo": "intentfreedomain/FreeDomain",
+    "available": true
+  },
+  {
+    "name": "freedns.my",
+    "url": "https://freedns.my/",
+    "description": "Free second-level domains under freedns.my - human review, no fees, no expiry.",
+    "repo": "KevinWhite-387/freedns-my",
+    "available": true
+  },
+  {
+    "name": "pntr.dev",
+    "url": "https://pntr.dev/",
+    "description": "Free, no sign-up. yourname.pntr.dev points anywhere, receives email at any address, and captures HTTP requests for debugging, with your AI assistant managing all of it over MCP.",
+    "repo": "oddunits/pntr-cli",
+    "available": true
   }
 ]
