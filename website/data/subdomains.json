@@ -21,6 +21,13 @@
     "available": true
   },
   {
+    "name": "is-my.app",
+    "url": "https://is-my.app/",
+    "description": "Grab your own sweet-looking '.is-my.app' subdomain.",
+    "repo": "jn-aman/is-my.app",
+    "available": true
+  },
+  {
     "name": "js.org",
     "url": "https://js.org/",
     "description": "Dedicated to JavaScript and its awesome community since 2015",
