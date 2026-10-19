@@ -7,6 +7,13 @@
     "available": true
   },
   {
+    "name": "runs-on.dev",
+    "url": "https://runs-on.dev/",
+    "description": "Grab your own cool 'runs-on.dev' subdomain to use for free forever.",
+    "repo": "zordhalo/runs-on.dev",
+    "available": true
+  },
+  {
     "name": "is-a.bot",
     "url": "https://www.is-a.bot/",
     "description": "Grab your own sweet-looking '.is-a.bot' subdomain.",
