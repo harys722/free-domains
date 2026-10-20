@@ -35,6 +35,14 @@
     "repo": "jn-aman/is-my.app",
     "available": true
   },
+
+  {
+    "name": "is-pinoy.dev",
+    "url": "https://is-pinoy.dev/",
+    "description": "Free '.is-pinoy.dev' subdomains for Filipino developers.",
+    "repo": "is-pinoy-dev/domains",
+    "available": false
+  },
   {
     "name": "js.org",
     "url": "https://js.org/",
