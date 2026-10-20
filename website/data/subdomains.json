@@ -21,6 +21,13 @@
     "available": true
   },
   {
+    "name": "from-mm.dev",
+    "url": "https://www.from-mm.dev",
+    "description": "Free 'from-mm.dev' subdomain for Myanmar developers.",
+    "repo": "thetmyoekhaing/from-mm.dev",
+    "available": true
+  },
+  {
     "name": "go-live.me",
     "url": "https://go-live.me/",
     "description": "Claim your free custom domain and instant Anycast subdomain on 'go-live.me'.",
