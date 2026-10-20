@@ -7,45 +7,10 @@
     "available": true
   },
   {
-    "name": "runs-on.dev",
-    "url": "https://runs-on.dev/",
-    "description": "Grab your own cool 'runs-on.dev' subdomain to use for free forever.",
-    "repo": "zordhalo/runs-on.dev",
-    "available": true
-  },
-  {
-    "name": "dev-in.tw",
-    "url": "https://dev-in.tw/",
-    "description": "Free personal 'dev-in.tw' subdomain for Taiwanese developers.",
-    "repo": "Dev-in-tw/dev-in.tw",
-    "available": true
-  },
-  {
-    "name": "from-mm.dev",
-    "url": "https://www.from-mm.dev",
-    "description": "Free 'from-mm.dev' subdomain for Myanmar developers.",
-    "repo": "thetmyoekhaing/from-mm.dev",
-    "available": true
-  },
-  {
-    "name": "go-live.me",
-    "url": "https://go-live.me/",
-    "description": "Claim your free custom domain and instant Anycast subdomain on 'go-live.me'.",
-    "repo": "shanmukhasaireddy13/Go-Live",
-    "available": true
-  },
-  {
     "name": "is-a.bot",
     "url": "https://www.is-a.bot/",
     "description": "Grab your own sweet-looking '.is-a.bot' subdomain.",
     "repo": "free-domains/is-a.bot",
-    "available": true
-  },
-  {
-    "name": "is-my.app",
-    "url": "https://is-my.app/",
-    "description": "Grab your own sweet-looking '.is-my.app' subdomain.",
-    "repo": "jn-aman/is-my.app",
     "available": true
   },
   {
@@ -634,6 +599,41 @@
     "url": "https://pntr.dev/",
     "description": "Free, no sign-up. yourname.pntr.dev points anywhere, receives email at any address, and captures HTTP requests for debugging, with your AI assistant managing all of it over MCP.",
     "repo": "oddunits/pntr-cli",
+    "available": true
+  },
+  {
+    "name": "runs-on.dev",
+    "url": "https://runs-on.dev/",
+    "description": "Grab your own cool 'runs-on.dev' subdomain to use for free forever.",
+    "repo": "zordhalo/runs-on.dev",
+    "available": true
+  },
+  {
+    "name": "is-my.app",
+    "url": "https://is-my.app/",
+    "description": "Grab your own sweet-looking '.is-my.app' subdomain.",
+    "repo": "jn-aman/is-my.app",
+    "available": true
+  },
+  {
+    "name": "dev-in.tw",
+    "url": "https://dev-in.tw/",
+    "description": "Free personal 'dev-in.tw' subdomain for Taiwanese developers.",
+    "repo": "Dev-in-tw/dev-in.tw",
+    "available": true
+  },
+  {
+    "name": "go-live.me",
+    "url": "https://go-live.me/",
+    "description": "Claim your free custom domain and instant Anycast subdomain on 'go-live.me'.",
+    "repo": "shanmukhasaireddy13/Go-Live",
+    "available": true
+  },
+  {
+    "name": "from-mm.dev",
+    "url": "https://www.from-mm.dev",
+    "description": "Free 'from-mm.dev' subdomain for Myanmar developers.",
+    "repo": "thetmyoekhaing/from-mm.dev",
     "available": true
   }
 ]
