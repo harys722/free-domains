@@ -13,7 +13,13 @@
     "repo": "zordhalo/runs-on.dev",
     "available": true
   },
-
+  {
+    "name": "dev-in.tw",
+    "url": "https://dev-in.tw/",
+    "description": "Free personal 'dev-in.tw' subdomain for Taiwanese developers.",
+    "repo": "Dev-in-tw/dev-in.tw",
+    "available": true
+  },
   {
     "name": "go-live.me",
     "url": "https://go-live.me/",
