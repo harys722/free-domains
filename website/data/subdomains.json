@@ -635,5 +635,12 @@
     "description": "Free 'from-mm.dev' subdomain for Myanmar developers.",
     "repo": "thetmyoekhaing/from-mm.dev",
     "available": true
+  },
+  {
+    "name": "awesomeprojects.tech",
+    "url": "https://awesomeprojects.tech/",
+    "description": "Free 'awesomeprojects.tech' subdomain for your projects.",
+    "repo": "So10-k/awesomeprojects.tech",
+    "available": true
   }
 ]
