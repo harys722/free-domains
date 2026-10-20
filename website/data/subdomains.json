@@ -13,6 +13,14 @@
     "repo": "zordhalo/runs-on.dev",
     "available": true
   },
+
+  {
+    "name": "go-live.me",
+    "url": "https://go-live.me/",
+    "description": "Claim your free custom domain and instant Anycast subdomain on 'go-live.me'.",
+    "repo": "shanmukhasaireddy13/Go-Live",
+    "available": true
+  },
   {
     "name": "is-a.bot",
     "url": "https://www.is-a.bot/",
