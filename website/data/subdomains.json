@@ -642,5 +642,12 @@
     "description": "Free 'awesomeprojects.tech' subdomain for your projects.",
     "repo": "So10-k/awesomeprojects.tech",
     "available": true
+  },
+  {
+    "name": "deed.page",
+    "url": "https://deed.page/",
+    "description": "Free 'deed.page' subdomain with static hosting: publish HTML or a folder with one API request or the MCP server and get https://your-slug.deed.page. No signup.",
+    "repo": "f-o-x11/deed-page-skill",
+    "available": true
   }
 ]
