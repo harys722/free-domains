@@ -33,9 +33,9 @@
 <div align="center">
   <h2>List of Free Domains Services</h2>
 
-  📋 All Domains Services: **92**
+  📋 All Domains Services: **93**
   &bull;
-  ✅ Available: **64**
+  ✅ Available: **65**
   &bull;
   ❌ Unavailable: **28**
 
@@ -110,6 +110,7 @@
  | [go-live.me](https://go-live.me/) | Claim your free custom domain and instant Anycast subdomain on 'go-live.me'. | [shanmukhasaireddy13/Go-Live](https://github.com/shanmukhasaireddy13/Go-Live) <br><br> ![GitHub stars](https://img.shields.io/github/stars/shanmukhasaireddy13/Go-Live?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/shanmukhasaireddy13/Go-Live?style=flat&label=Forks) | ✅ |
  | [from-mm.dev](https://www.from-mm.dev) | Free 'from-mm.dev' subdomain for Myanmar developers. | [thetmyoekhaing/from-mm.dev](https://github.com/thetmyoekhaing/from-mm.dev) <br><br> ![GitHub stars](https://img.shields.io/github/stars/thetmyoekhaing/from-mm.dev?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/thetmyoekhaing/from-mm.dev?style=flat&label=Forks) | ✅ |
  | [awesomeprojects.tech](https://awesomeprojects.tech/) | Free 'awesomeprojects.tech' subdomain for your projects. | [So10-k/awesomeprojects.tech](https://github.com/So10-k/awesomeprojects.tech) <br><br> ![GitHub stars](https://img.shields.io/github/stars/So10-k/awesomeprojects.tech?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/So10-k/awesomeprojects.tech?style=flat&label=Forks) | ✅ |
+ | [deed.page](https://deed.page/) | Free 'deed.page' subdomain with static hosting: publish HTML or a folder with one API request or the MCP server and get https://your-slug.deed.page. No signup. | [f-o-x11/deed-page-skill](https://github.com/f-o-x11/deed-page-skill) <br><br> ![GitHub stars](https://img.shields.io/github/stars/f-o-x11/deed-page-skill?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/f-o-x11/deed-page-skill?style=flat&label=Forks) | ✅ |
  | [Domains Project](https://getyourfree.space/) | Free developer subdomains under owns.it.com, with more domains coming soon. | [domainsproject/register](https://github.com/domainsproject/register) <br><br> ![GitHub stars](https://img.shields.io/github/stars/domainsproject/register?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/domainsproject/register?style=flat&label=Forks) | ❌ |
  | [is-a.shop](https://is-a.shop/) | Get is-a.shop subdomain for your shop. | [is-a-shop/register](https://github.com/is-a-shop/register) <br><br> ![GitHub stars](https://img.shields.io/github/stars/is-a-shop/register?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/is-a-shop/register?style=flat&label=Forks) | ❌ |
  | [lgbt.sh](https://lgbt.sh/) | Free lgbt.sh sub-domain registration service. | [lgbt-sh/lgbt-sh-v1](https://github.com/lgbt-sh/lgbt-sh-v1) <br><br> ![GitHub stars](https://img.shields.io/github/stars/lgbt-sh/lgbt-sh-v1?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/lgbt-sh/lgbt-sh-v1?style=flat&label=Forks) | ❌ |
