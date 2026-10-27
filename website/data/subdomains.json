@@ -649,5 +649,12 @@
     "description": "Free 'deed.page' subdomain with static hosting: publish HTML or a folder with one API request or the MCP server and get https://your-slug.deed.page. No signup.",
     "repo": "f-o-x11/deed-page-skill",
     "available": true
+  },
+  {
+    "name": "lovie.me",
+    "url": "https://www.lovie.me/",
+    "description": "Free 'lovie.me' subdomain with authoritative Anycast DNS control, automated SSL/TLS provisioning, and 1-click email routing.",
+    "repo": null,
+    "available": true
   }
 ]
