@@ -656,5 +656,12 @@
     "description": "Free 'lovie.me' subdomain with authoritative Anycast DNS control, automated SSL/TLS provisioning, and 1-click email routing.",
     "repo": null,
     "available": true
+  },
+  {
+    "name": "stackryze.com",
+    "url": "https://domain.stackryze.com",
+    "description": "Free Domain for Everyone, Claim yours today.",
+    "repo": "stackryze/FreeDomains",
+    "available": true
   }
 ]
