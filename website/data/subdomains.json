@@ -670,5 +670,12 @@
     "description": "A free subdomain for developers on devs.surf: always free, forever.",
     "repo": null,
     "available": true
+  },
+  {
+    "name": "pu.gy",
+    "url": "https://domain.pu.gy/",
+    "description": "Get yourname.pu.gy and manage the actual DNS records.",
+    "repo": null,
+    "available": true
   }
 ]
