@@ -33,9 +33,9 @@
 <div align="center">
   <h2>List of Free Domains Services</h2>
 
-  📋 All Domains Services: **95**
+  📋 All Domains Services: **96**
   &bull;
-  ✅ Available: **66**
+  ✅ Available: **67**
   &bull;
   ❌ Unavailable: **29**
 
@@ -112,6 +112,7 @@
  | [deed.page](https://deed.page/) | Free 'deed.page' subdomain with static hosting: publish HTML or a folder with one API request or the MCP server and get https://your-slug.deed.page. No signup. | [f-o-x11/deed-page-skill](https://github.com/f-o-x11/deed-page-skill) <br><br> ![GitHub stars](https://img.shields.io/github/stars/f-o-x11/deed-page-skill?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/f-o-x11/deed-page-skill?style=flat&label=Forks) | ✅ |
  | [lovie.me](https://www.lovie.me/) | Free 'lovie.me' subdomain with authoritative Anycast DNS control, automated SSL/TLS provisioning, and 1-click email routing. | — | ✅ |
  | [stackryze.com](https://domain.stackryze.com) | Free Domain for Everyone, Claim yours today. | [stackryze/FreeDomains](https://github.com/stackryze/FreeDomains) <br><br> ![GitHub stars](https://img.shields.io/github/stars/stackryze/FreeDomains?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/stackryze/FreeDomains?style=flat&label=Forks) | ✅ |
+ | [devs.surf](https://devs.surf/) | A free subdomain for developers on devs.surf: always free, forever. | — | ✅ |
  | [Domains Project](https://getyourfree.space/) | Free developer subdomains under owns.it.com, with more domains coming soon. | [domainsproject/register](https://github.com/domainsproject/register) <br><br> ![GitHub stars](https://img.shields.io/github/stars/domainsproject/register?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/domainsproject/register?style=flat&label=Forks) | ❌ |
  | [is-a.shop](https://is-a.shop/) | Get is-a.shop subdomain for your shop. | [is-a-shop/register](https://github.com/is-a-shop/register) <br><br> ![GitHub stars](https://img.shields.io/github/stars/is-a-shop/register?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/is-a-shop/register?style=flat&label=Forks) | ❌ |
  | [openalias.xyz](https://openalias.xyz/) | Free developer subdomains: hi-dev.pro & dev-at.net for your website. | — | ❌ |
