@@ -35,9 +35,9 @@
 
   📋 All Domains Services: **95**
   &bull;
-  ✅ Available: **67**
+  ✅ Available: **66**
   &bull;
-  ❌ Unavailable: **28**
+  ❌ Unavailable: **29**
 
 </div>
 
@@ -65,7 +65,6 @@
  | [ngo.us](https://nic.ngo.us/) | Free subdomains exclusively for nonprofits, nongovernmental organizations (NGOs) and initiatives. | [ngo-us/registry](https://github.com/ngo-us/registry) <br><br> ![GitHub stars](https://img.shields.io/github/stars/ngo-us/registry?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/ngo-us/registry?style=flat&label=Forks) | ✅ |
  | [pp.ua](https://pp.ua/) | Free pp.ua subdomains. | — | ✅ |
  | [part-of.my.id](https://part-of.my.id/) | Your own personal id for your website. | [partofmyid/register](https://github.com/partofmyid/register) <br><br> ![GitHub stars](https://img.shields.io/github/stars/partofmyid/register?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/partofmyid/register?style=flat&label=Forks) | ✅ |
- | [openalias.xyz](https://openalias.xyz/) | Free developer subdomains: hi-dev.pro & dev-at.net for your website. | — | ✅ |
  | [cli.rs](https://cli.rs/) | .RS is an expensive domain. Use {yourproject}.cli.rs for your Rust projects! | [zackify/cli.rs](https://github.com/zackify/cli.rs) <br><br> ![GitHub stars](https://img.shields.io/github/stars/zackify/cli.rs?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/zackify/cli.rs?style=flat&label=Forks) | ✅ |
  | [env.pm](https://env.pm/) | Use the 'env.pm' / 'jsx.pm' subdomains for your projects or personal use. | — | ✅ |
  | [creepers.sbs & creepers.cloud](https://creepers.sbs/) | You can register your '.creepers.sbs' / '.creepers.cloud' subdomain completely free. | [creepersbs/register](https://github.com/creepersbs/register) <br><br> ![GitHub stars](https://img.shields.io/github/stars/creepersbs/register?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/creepersbs/register?style=flat&label=Forks) | ✅ |
@@ -115,6 +114,7 @@
  | [stackryze.com](https://domain.stackryze.com) | Free Domain for Everyone, Claim yours today. | [stackryze/FreeDomains](https://github.com/stackryze/FreeDomains) <br><br> ![GitHub stars](https://img.shields.io/github/stars/stackryze/FreeDomains?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/stackryze/FreeDomains?style=flat&label=Forks) | ✅ |
  | [Domains Project](https://getyourfree.space/) | Free developer subdomains under owns.it.com, with more domains coming soon. | [domainsproject/register](https://github.com/domainsproject/register) <br><br> ![GitHub stars](https://img.shields.io/github/stars/domainsproject/register?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/domainsproject/register?style=flat&label=Forks) | ❌ |
  | [is-a.shop](https://is-a.shop/) | Get is-a.shop subdomain for your shop. | [is-a-shop/register](https://github.com/is-a-shop/register) <br><br> ![GitHub stars](https://img.shields.io/github/stars/is-a-shop/register?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/is-a-shop/register?style=flat&label=Forks) | ❌ |
+ | [openalias.xyz](https://openalias.xyz/) | Free developer subdomains: hi-dev.pro & dev-at.net for your website. | — | ❌ |
  | [lgbt.sh](https://lgbt.sh/) | Free lgbt.sh sub-domain registration service. | [lgbt-sh/lgbt-sh-v1](https://github.com/lgbt-sh/lgbt-sh-v1) <br><br> ![GitHub stars](https://img.shields.io/github/stars/lgbt-sh/lgbt-sh-v1?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/lgbt-sh/lgbt-sh-v1?style=flat&label=Forks) | ❌ |
  | [zone.id](https://zone.id/) | Zone.ID is a premium subdomain provider as an alternative to the traditional .id TLD. | — | ❌ |
  | [is-truly-a.pro](https://is-truly-a.pro/) | Free is-truly-a.pro subdomains, available for everyone! | [is-truly-a-pro/register](https://github.com/is-truly-a-pro/register) <br><br> ![GitHub stars](https://img.shields.io/github/stars/is-truly-a-pro/register?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/is-truly-a-pro/register?style=flat&label=Forks) | ❌ |
