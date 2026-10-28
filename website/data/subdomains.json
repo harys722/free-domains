@@ -663,5 +663,12 @@
     "description": "Free Domain for Everyone, Claim yours today.",
     "repo": "stackryze/FreeDomains",
     "available": true
+  },
+  {
+    "name": "devs.surf",
+    "url": "https://devs.surf/",
+    "description": "A free subdomain for developers on devs.surf: always free, forever.",
+    "repo": null,
+    "available": true
   }
 ]
