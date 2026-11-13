@@ -1,288 +1,448 @@
-let domainsData = [];
-let filteredDomains = [], currentFilter = 'all', currentSearchTerm = '', currentLink = null, currentView = localStorage.getItem('domainView') || 'gallery';
-        const searchInput = document.getElementById('searchInput'),
-              clearSearchBtn = document.getElementById('clearSearch'),
-              domainsGrid = document.getElementById('domainsGrid'),
-              searchResults = document.getElementById('searchResults'),
-              noResults = document.getElementById('noResults'),
-              themeToggle = document.getElementById('themeToggle'),
-              themeIcon = document.getElementById('themeIcon'),
-              scrollTop = document.getElementById('scrollTop'),
-              loadingScreen = document.getElementById('loadingScreen'),
-              linkConfirmDialog = document.getElementById('linkConfirmDialog'),
-              confirmLinkUrl = document.getElementById('confirmLinkUrl'),
-              confirmLinkBtn = document.getElementById('confirmLink'),
-              cancelLinkBtn = document.getElementById('cancelLink'),
-              listViewBtn = document.getElementById('listViewBtn'),
-              galleryViewBtn = document.getElementById('galleryViewBtn'),
-              resetViewBtn = document.getElementById('resetViewBtn'),
-              domainCountBadge = document.getElementById('domainCountBadge');
-        async function loadDomainsData() {
-            try {
-                const response = await fetch('data/subdomains.json');
-                if (!response.ok) throw new Error(`HTTP ${response.status}`);
-                const raw = await response.json();
-                // Available first, unavailable last — consistent with README
-                domainsData = raw.sort((a, b) => {
-                    if (a.available === b.available) return 0;
-                    return a.available ? -1 : 1;
-                });
-            } catch (err) {
-                console.error('Failed to load subdomains.json:', err);
-                domainsData = [];
+(() => {
+    const byId = id => document.getElementById(id);
+    const search = byId('searchInput');
+    const clearSearch = byId('clearSearch');
+    const searchTools = byId('searchTools');
+    const searchFilters = byId('searchFilters');
+    const filterToggle = byId('filterToggle');
+    const resultArea = byId('collectionResults');
+    const grid = byId('domainsGrid');
+    const results = byId('searchResults');
+    const noResults = byId('noResults');
+    const loader = byId('loadingScreen');
+    const loadError = byId('loadError');
+    const retry = byId('retryLoad');
+    const count = byId('domainCountBadge');
+    const filters = document.querySelectorAll('.filter-btn[data-filter]');
+    const listButton = byId('listViewBtn');
+    const galleryButton = byId('galleryViewBtn');
+    const dialog = byId('linkConfirmDialog');
+    const catalogueURL = new URL('subdomains.json', document.currentScript.src);
+    const filterLabels = { available: 'available', unavailable: 'unavailable', github: 'On GitHub', saved: 'Saved' };
+    const bookmarkTemplate = byId('bookmarkTemplate');
+    const bookmarkKey = 'free-domains.bookmarks';
+    let bookmarks = readBookmarks();
+    let cards = [];
+    let filter = 'all';
+    let state = 'idle';
+    let linkToOpen = null;
+
+    function readBookmarks() {
+        try {
+            const values = JSON.parse(localStorage.getItem(bookmarkKey));
+            return new Set(Array.isArray(values) ? values.filter(value => typeof value === 'string') : []);
+        } catch {
+            return new Set();
+        }
+    }
+
+    function renderBookmark(button) {
+        const name = button.dataset.domain;
+        const saved = bookmarks.has(name);
+        button.setAttribute('aria-pressed', String(saved));
+        button.title = (saved ? 'Remove bookmark for ' : 'Bookmark ') + name;
+    }
+
+    function element(tag, className, text) {
+        const node = document.createElement(tag);
+        node.className = className;
+        if (text !== undefined) node.textContent = text;
+        return node;
+    }
+
+    function externalLink(text, href, className) {
+        const link = element('a', className + ' external-link', text);
+        link.href = href;
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        return link;
+    }
+
+    function repositoryDetails(repo) {
+        const footer = element('div', 'domain-footer');
+        const repoPath = repo?.split('/').map(encodeURIComponent).join('/');
+        const link = repo
+            ? externalLink(repo, 'https://github.com/' + repoPath, 'repo-link')
+            : element('span', 'repo-link no-repository', 'No GitHub repository');
+        const svgNS = 'http://www.w3.org/2000/svg';
+        const icon = document.createElementNS(svgNS, 'svg');
+        icon.setAttribute('class', 'github-icon');
+        icon.setAttribute('viewBox', '0 0 24 24');
+        icon.setAttribute('width', '16');
+        icon.setAttribute('height', '16');
+        icon.setAttribute('aria-hidden', 'true');
+        const path = document.createElementNS(svgNS, 'path');
+        path.setAttribute('fill', 'currentColor');
+        path.setAttribute('d', 'M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.23c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.74.08-.74 1.21.08 1.85 1.24 1.85 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.31-.54-1.53.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.49 5.92.43.37.81 1.1.81 2.22v3.31c0 .32.22.69.83.57A12 12 0 0 0 24 12C24 5.37 18.63 0 12 0Z');
+        icon.append(path);
+        link.prepend(icon);
+        footer.append(link);
+        if (!repo) return footer;
+        const stats = element('div', 'github-stats');
+        for (const [metric, label] of [['stars', 'Stars'], ['forks', 'Forks'], ['languages/top', 'Top language']]) {
+            const img = document.createElement('img');
+            img.alt = label;
+            img.height = 20;
+            img.loading = 'lazy';
+            img.decoding = 'async';
+            img.fetchPriority = 'low';
+            img.crossOrigin = 'anonymous';
+            img.draggable = false;
+            const url = new URL('https://img.shields.io/github/' + metric + '/' + repoPath);
+            url.searchParams.set('style', 'flat');
+            if (metric !== 'languages/top') url.searchParams.set('label', label);
+            img.src = url.href;
+            stats.append(img);
+        }
+        footer.append(stats);
+        return footer;
+    }
+
+    function createCard(domain) {
+        const card = element('article', 'domain-card');
+        const heading = element('h3', 'domain-heading');
+        const name = externalLink(domain.name, domain.url, 'domain-name');
+        const availability = domain.available ? 'Available' : 'Unavailable';
+        const badge = element('span', 'availability-badge ' + availability.toLowerCase(), availability);
+        const description = element('p', 'domain-description', domain.description);
+        heading.append(name);
+        const bookmark = bookmarkTemplate.content.firstElementChild.cloneNode(true);
+        bookmark.dataset.domain = domain.name;
+        bookmark.setAttribute('aria-label', 'Bookmark ' + domain.name);
+        renderBookmark(bookmark);
+        const identity = element('div', 'domain-identity');
+        identity.append(heading, badge);
+        card.append(identity, description, repositoryDetails(domain.repo), bookmark);
+        return { domain, card, name, description, bookmark, highlighted: '' };
+    }
+
+    function orderedCards() {
+        const byName = new Map(cards.map(item => [item.domain.name, item]));
+        const saved = [];
+        for (const name of bookmarks) {
+            if (byName.has(name)) saved.push(byName.get(name));
+        }
+        return saved.concat(cards.filter(item => !bookmarks.has(item.domain.name)));
+    }
+
+    function moveCard(card, before) {
+        if (card.nextElementSibling === before) return;
+        if (grid.moveBefore) grid.moveBefore(card, before);
+        else {
+            const focused = document.activeElement;
+            grid.insertBefore(card, before);
+            if (card.contains(focused)) focused.focus({ preventScroll: true });
+        }
+    }
+
+    function highlight(node, text, pattern) {
+        if (!pattern) {
+            node.textContent = text;
+            return;
+        }
+        const fragments = [];
+        let start = 0;
+        for (const match of text.matchAll(pattern)) {
+            fragments.push(text.slice(start, match.index), element('mark', 'highlight', match[0]));
+            start = match.index + match[0].length;
+        }
+        fragments.push(text.slice(start));
+        node.replaceChildren(...fragments);
+    }
+
+    function resultMessage(visible, term) {
+        if (filter === 'saved') {
+            const noun = visible === 1 ? 'service' : 'services';
+            return `${visible} saved ${noun}` + (term ? ` matching "${term}"` : '');
+        }
+        if (filter === 'github') {
+            const services = visible === 1 ? 'service' : 'services';
+            return term ? `Found ${visible} ${services} on GitHub matching "${term}"`
+                : `Showing ${visible} ${services} with a GitHub repository`;
+        }
+        const noun = visible === 1 ? 'domain' : 'domains';
+        if (term) {
+            const scope = filter === 'all' ? '' : ' in ' + filterLabels[filter];
+            return 'Found ' + visible + ' ' + noun + ' matching "' + term + '"' + scope;
+        }
+        if (filter !== 'all') {
+            return 'Showing ' + visible + ' ' + filterLabels[filter] + ' ' + (visible === 1 ? 'domain' : 'domains services');
+        }
+        return 'Showing all ' + visible + ' domains services';
+    }
+
+    function restoreSearchFromURL() {
+        const params = new URLSearchParams(location.search);
+        search.value = params.get('q') || '';
+        const selected = params.get('filter');
+        setFilter(Object.hasOwn(filterLabels, selected) ? selected : 'all');
+    }
+
+    function syncSearchURL(term) {
+        const url = new URL(location.href);
+        if (url.protocol !== 'https:' && url.protocol !== 'http:') return;
+        if (term) url.searchParams.set('q', term);
+        else url.searchParams.delete('q');
+        if (filter === 'all') url.searchParams.delete('filter');
+        else url.searchParams.set('filter', filter);
+        if (url.href !== location.href) history.replaceState(history.state, '', url);
+    }
+
+    function updateResults() {
+        const term = search.value.trim();
+        syncSearchURL(term);
+        clearSearch.hidden = search.value.length === 0;
+        if (state !== 'ready') return;
+        // Read the position before hiding cards can shorten the page and clamp scrollY.
+        const pastFirstResult = resultArea.getBoundingClientRect().top < searchTools.getBoundingClientRect().bottom;
+        const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        const pattern = term ? new RegExp(escaped, 'gi') : null;
+        let visible = 0;
+        for (const item of cards) {
+            const { domain, card } = item;
+            const matchesFilter = filter === 'all' || (filter === 'available' && domain.available)
+                || (filter === 'unavailable' && !domain.available) || (filter === 'github' && !!domain.repo)
+                || (filter === 'saved' && bookmarks.has(domain.name));
+            const matchesText = !term || domain.name.search(pattern) !== -1 || domain.description.search(pattern) !== -1;
+            card.hidden = !(matchesFilter && matchesText);
+            if (card.hidden) continue;
+            visible++;
+            if (item.highlighted !== term) {
+                highlight(item.name, domain.name, pattern);
+                highlight(item.description, domain.description, pattern);
+                item.highlighted = term;
             }
-            filteredDomains = [...domainsData];
-            updateDomainCountBadge();
         }
-        function updateDomainCountBadge() {
-            if (domainCountBadge) {
-                domainCountBadge.textContent = `📊 ${domainsData.length}+ Free Domain Services`;
+        grid.hidden = visible === 0;
+        noResults.hidden = visible > 0;
+        if (visible === 0) {
+            const emptySaved = filter === 'saved' && !term;
+            noResults.querySelector('h3').textContent = emptySaved ? 'No saved domains yet' : 'No domains found';
+            noResults.querySelector('p').textContent = emptySaved
+                ? 'Use the bookmark on a service to save it here.' : 'Try adjusting your search terms or filters';
+            noResults.querySelector('p').hidden = !cards.length;
+            byId('clearAllFilters').hidden = !cards.length && !term && filter === 'all';
+        }
+        results.textContent = resultMessage(visible, term);
+        if (pastFirstResult) {
+            resultArea.classList.add('keep-results-in-view');
+            const offset = resultArea.getBoundingClientRect().top - searchTools.offsetHeight - 8;
+            window.scrollBy({ top: offset, behavior: 'instant' });
+        }
+    }
+
+    function setSelected(button, selected) {
+        button.classList.toggle('active', selected);
+        button.setAttribute('aria-pressed', String(selected));
+    }
+
+    function setFilter(value) {
+        filter = value;
+        for (const button of filters) setSelected(button, button.dataset.filter === filter);
+        filterToggle.classList.toggle('active', filter !== 'all');
+        filterToggle.setAttribute('aria-label', filter === 'all' ? 'Filters' : 'Filters, ' + filterLabels[filter] + ' selected');
+        updateResults();
+    }
+
+    function closeFilters(returnFocus = false) {
+        if (filterToggle.getAttribute('aria-expanded') !== 'true') return;
+        filterToggle.setAttribute('aria-expanded', 'false');
+        if (returnFocus) filterToggle.focus({ preventScroll: true });
+    }
+
+    function setView(view) {
+        const list = view === 'list';
+        grid.classList.toggle('list', list);
+        grid.classList.toggle('gallery', !list);
+        setSelected(listButton, list);
+        setSelected(galleryButton, !list);
+    }
+
+    function chooseView(view) {
+        setView(view);
+        try {
+            if (view) localStorage.setItem('domainView', view);
+            else localStorage.removeItem('domainView');
+        } catch {
+            // Switching views still works if this browser blocks persistent storage.
+        }
+    }
+
+    function isDomain(entry) {
+        return entry && typeof entry.name === 'string' && typeof entry.description === 'string'
+            && typeof entry.available === 'boolean' && typeof entry.url === 'string'
+            && /^https?:\/\//i.test(entry.url) && (entry.repo == null || typeof entry.repo === 'string');
+    }
+
+    async function loadCatalogue() {
+        if (state === 'loading') return;
+        const retrying = state === 'error';
+        state = 'loading';
+        loader.hidden = false;
+        loadError.hidden = true;
+        noResults.hidden = true;
+        grid.hidden = true;
+        grid.setAttribute('aria-busy', 'true');
+        results.textContent = '';
+        try {
+            const response = await fetch(catalogueURL);
+            if (!response.ok) throw new Error('HTTP ' + response.status);
+            const data = await response.json();
+            if (!Array.isArray(data) || !data.every(isDomain)) throw new Error('Invalid catalogue');
+            data.sort((a, b) => Number(b.available) - Number(a.available));
+            cards = data.map(createCard);
+            grid.replaceChildren(...orderedCards().map(item => item.card));
+            count.textContent = cards.length + '+ Free Domain Services';
+            state = 'ready';
+            updateResults();
+        } catch (error) {
+            state = 'error';
+            loadError.hidden = false;
+            console.error('Failed to load subdomains.json:', error);
+        } finally {
+            loader.hidden = true;
+            grid.setAttribute('aria-busy', 'false');
+            if (retrying && document.activeElement === document.body) {
+                (state === 'ready' ? search : retry).focus({ preventScroll: true });
             }
         }
-        function initializeTheme() {
-            const theme = localStorage.getItem('theme') || 'light';
-            document.documentElement.setAttribute('data-theme', theme);
-            themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
+    }
+
+    // Keep the repository link usable if its optional third-party badges fail.
+    grid.addEventListener('error', event => {
+        const image = event.target;
+        if (!(image instanceof HTMLImageElement) || !image.matches('.github-stats img')) return;
+        const stats = image.parentElement;
+        image.remove();
+        if (!stats.childElementCount) stats.remove();
+    }, true);
+
+    grid.addEventListener('click', event => {
+        const button = event.target.closest('.bookmark-btn');
+        if (!button) return;
+        const name = button.dataset.domain;
+        if (bookmarks.has(name)) bookmarks.delete(name);
+        else bookmarks.add(name);
+        try {
+            localStorage.setItem(bookmarkKey, JSON.stringify([...bookmarks]));
+        } catch {
+            // Keep the shortlist usable for this visit when storage is unavailable.
         }
-        function toggleTheme() {
-            const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-            document.documentElement.setAttribute('data-theme', theme);
-            localStorage.setItem('theme', theme);
-            themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
+        renderBookmark(button);
+        const order = orderedCards();
+        const index = order.findIndex(item => item.bookmark === button);
+        moveCard(order[index].card, order[index + 1]?.card || null);
+        if (filter === 'saved') {
+            updateResults();
+            (grid.querySelector('.domain-card:not([hidden]) .bookmark-btn') || byId('clearAllFilters')).focus();
         }
-        function handleScroll() {
-            const pos = window.scrollY;
-            themeToggle.classList.toggle('scrolled', pos > 100);
-            scrollTop.classList.toggle('visible', pos > 100);
+    });
+    window.addEventListener('storage', event => {
+        if (event.key !== bookmarkKey && event.key !== null) return;
+        bookmarks = readBookmarks();
+        let before = null;
+        for (const { card } of orderedCards().reverse()) {
+            moveCard(card, before);
+            before = card;
         }
-        function scrollToTop() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+        for (const item of cards) renderBookmark(item.bookmark);
+        if (filter === 'saved') updateResults();
+    });
+
+    search.addEventListener('input', updateResults);
+    clearSearch.addEventListener('click', () => {
+        search.value = '';
+        updateResults();
+        search.focus();
+    });
+    byId('clearAllFilters').addEventListener('click', () => {
+        search.value = '';
+        setFilter('all');
+        search.focus();
+    });
+    filterToggle.addEventListener('click', () => {
+        const open = filterToggle.getAttribute('aria-expanded') === 'true';
+        filterToggle.setAttribute('aria-expanded', String(!open));
+    });
+    for (const button of filters) button.addEventListener('click', () => {
+        closeFilters(true);
+        setFilter(button.dataset.filter);
+    });
+    searchFilters.addEventListener('focusout', event => {
+        if (!searchFilters.contains(event.relatedTarget)) closeFilters();
+    });
+    window.matchMedia('(max-width: 58rem)').addEventListener('change', () => closeFilters());
+    listButton.addEventListener('click', () => chooseView('list'));
+    galleryButton.addEventListener('click', () => chooseView('gallery'));
+    byId('resetViewBtn').addEventListener('click', () => chooseView(null));
+    retry.addEventListener('click', loadCatalogue);
+
+    document.addEventListener('keydown', event => {
+        if (dialog.open || event.isComposing || event.defaultPrevented) return;
+        if (event.key === 'Escape' && filterToggle.getAttribute('aria-expanded') === 'true') {
+            event.preventDefault();
+            closeFilters(true);
+            return;
         }
-        function hideLoadingScreen() {
-            setTimeout(() => {
-                loadingScreen.classList.add('hidden');
-                document.body.classList.remove('loading');
-                setTimeout(() => {
-                    loadingScreen.style.display = 'none';
-                    document.querySelector('header').classList.add('reveal');
-                    document.querySelector('main').classList.add('reveal');
-                }, 600);
-            }, 5000);
+        const editing = event.target instanceof Element
+            && (event.target.isContentEditable || event.target.matches('input, textarea, select'));
+        const searchShortcut = (event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'k';
+        if (searchShortcut || (event.key === '/' && !editing && !event.altKey && !event.ctrlKey && !event.metaKey)) {
+            event.preventDefault();
+            search.focus();
+            search.select();
+        } else if (event.key === 'Escape' && event.target === search) {
+            event.preventDefault();
+            search.value = '';
+            updateResults();
         }
-        function showLinkConfirmation(e) {
-            e.preventDefault();
-            e.stopPropagation();
-            const link = e.target.closest('a[target="_blank"]');
-            if (!link) return;
-            confirmLinkUrl.textContent = link.getAttribute('href');
-            linkConfirmDialog.style.display = 'block';
-            currentLink = link.getAttribute('href');
-        }
-        function hideLinkConfirmation() {
-            linkConfirmDialog.style.display = 'none';
-            currentLink = null;
-        }
-        function attachLinkEvents() {
-            document.querySelectorAll('a[target="_blank"]').forEach(link => {
-                link.classList.add('external-link');
-                const newLink = link.cloneNode(true);
-                link.parentNode.replaceChild(newLink, link);
-                newLink.addEventListener('click', showLinkConfirmation);
-            });
-        }
-        function attachImageEvents() {
-            document.querySelectorAll('img[src*="img.shields.io"]').forEach(img => {
-                img.addEventListener('dblclick', e => {
-                    e.preventDefault();
-                    e.stopPropagation();
-                });
-                img.addEventListener('dragstart', e => e.preventDefault());
-            });
-        }
-        function initializeView() {
-            setView(currentView);
-            listViewBtn.classList.toggle('active', currentView === 'list');
-            galleryViewBtn.classList.toggle('active', currentView === 'gallery');
-        }
-        function setView(view) {
-            currentView = view;
-            domainsGrid.classList.toggle('list', view === 'list');
-            domainsGrid.classList.toggle('gallery', view === 'gallery');
-            listViewBtn.classList.toggle('active', view === 'list');
-            galleryViewBtn.classList.toggle('active', view === 'gallery');
-            localStorage.setItem('domainView', view);
-        }
-        function resetView() {
-            setView('gallery');
-            localStorage.removeItem('domainView');
-        }
-        function initializeEventListeners() {
-            themeToggle.addEventListener('click', toggleTheme);
-            scrollTop.addEventListener('click', scrollToTop);
-            window.addEventListener('scroll', handleScroll);
-            searchInput.addEventListener('input', debounce(handleSearch, 300));
-            searchInput.addEventListener('keydown', e => { if (e.key === 'Enter') e.preventDefault(); });
-            clearSearchBtn.addEventListener('click', clearSearch);
-            document.querySelectorAll('.filter-btn').forEach(btn => {
-                btn.addEventListener('click', () => setFilter(btn.getAttribute('data-filter')));
-            });
-            listViewBtn.addEventListener('click', () => setView('list'));
-            galleryViewBtn.addEventListener('click', () => setView('gallery'));
-            resetViewBtn.addEventListener('click', resetView);
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', e => {
-                    e.preventDefault();
-                    document.querySelector(anchor.getAttribute('href')).scrollIntoView({ behavior: 'smooth', block: 'start' });
-                });
-            });
-            attachLinkEvents();
-            attachImageEvents();
-            document.addEventListener('click', e => {
-                if (!linkConfirmDialog.contains(e.target) && !e.target.closest('a[target="_blank"]')) hideLinkConfirmation();
-            });
-            confirmLinkBtn.addEventListener('click', () => {
-                if (currentLink) {
-                    window.open(currentLink, '_blank', 'noopener,noreferrer');
-                    hideLinkConfirmation();
-                }
-            });
-            cancelLinkBtn.addEventListener('click', hideLinkConfirmation);
-            document.addEventListener('dragstart', e => {
-                if (e.target.matches('img[src*="img.shields.io"], .domain-card, .filter-btn, .btn, .theme-toggle, .scroll-top, .clear-search')) e.preventDefault();
-            });
-            document.addEventListener('keydown', e => {
-                if ((e.key === 'k' && (e.ctrlKey || e.metaKey)) || e.key === '/') {
-                    e.preventDefault();
-                    searchInput.focus();
-                    searchInput.select();
-                }
-                if (e.key === 'Escape') {
-                    if (document.activeElement === searchInput) clearSearch();
-                    hideLinkConfirmation();
-                }
-            });
-            searchInput.addEventListener('focus', () => { if (!searchInput.value) searchInput.placeholder = 'Discover domains... (Press Esc to clear)'; });
-            searchInput.addEventListener('blur', () => searchInput.placeholder = 'Discover your ideal domain...');
-        }
-        function handleSearch(e) {
-            currentSearchTerm = e.target.value.toLowerCase().trim();
-            clearSearchBtn.classList.toggle('visible', currentSearchTerm.length > 0);
-            applyFilters();
-        }
-        function clearSearch() {
-            searchInput.value = '';
-            currentSearchTerm = '';
-            clearSearchBtn.classList.remove('visible');
-            applyFilters();
-            searchInput.focus();
-        }
-        function setFilter(filter) {
-            currentFilter = filter;
-            document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.toggle('active', btn.getAttribute('data-filter') === filter));
-            applyFilters();
-        }
-        function applyFilters() {
-            filteredDomains = domainsData.filter(domain => {
-                const matchesSearch = !currentSearchTerm ||
-                    domain.name.toLowerCase().includes(currentSearchTerm) ||
-                    domain.description.toLowerCase().includes(currentSearchTerm);
-                let matchesFilter = true;
-                switch (currentFilter) {
-                    case 'available': matchesFilter = domain.available; break;
-                    case 'unavailable': matchesFilter = !domain.available; break;
-                    case 'github': matchesFilter = domain.repo !== null; break;
-                }
-                return matchesSearch && matchesFilter;
-            });
-            updateSearchResults();
-            renderDomains();
-        }
-        function updateSearchResults() {
-            const total = domainsData.length, filtered = filteredDomains.length;
-            let message = currentSearchTerm && currentFilter !== 'all' ? `Found ${filtered} domain${filtered !== 1 ? 's' : ''} matching "${currentSearchTerm}" in ${getFilterLabel(currentFilter)}` :
-                          currentSearchTerm ? `Found ${filtered} domain${filtered !== 1 ? 's' : ''} matching "${currentSearchTerm}"` :
-                          currentFilter !== 'all' ? `Showing ${filtered} ${getFilterLabel(currentFilter)} domain${filtered !== 1 ? 's services' : ''}` :
-                          `Showing all ${total} domains services`;
-            searchResults.textContent = message;
-        }
-        function getFilterLabel(filter) {
-            return { available: 'available', unavailable: 'unavailable', github: 'GitHub-linked', all: 'all' }[filter] || 'all';
-        }
-        function clearAllFilters() {
-            searchInput.value = '';
-            currentSearchTerm = '';
-            currentFilter = 'all';
-            clearSearchBtn.classList.remove('visible');
-            document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.toggle('active', btn.getAttribute('data-filter') === 'all'));
-            applyFilters();
-            searchInput.focus();
-        }
-        function renderDomains() {
-            if (filteredDomains.length === 0) {
-                domainsGrid.style.display = 'none';
-                noResults.style.display = 'block';
-                return;
-            }
-            domainsGrid.style.display = 'grid';
-            noResults.style.display = 'none';
-            domainsGrid.innerHTML = filteredDomains.map(createDomainCard).join('');
-            setTimeout(() => {
-                document.querySelectorAll('.domain-card').forEach((card, i) => {
-                    setTimeout(() => card.classList.add('fade-in'), i * 50);
-                });
-                attachLinkEvents();
-                attachImageEvents();
-            }, 10);
-        }
-        function createDomainCard(domain) {
-            const highlightedName = highlightText(domain.name, currentSearchTerm);
-            const highlightedDescription = highlightText(domain.description, currentSearchTerm);
-            return `
-                <div class="domain-card">
-                    <div class="domain-header">
-                        <a href="${domain.url}" target="_blank" class="domain-name external-link">${highlightedName}<span style="font-size: 0.8em;">🔗</span></a>
-                        <span class="availability-badge ${domain.available ? 'available' : 'unavailable'}">${domain.available ? '✅ Available' : '❌ Unavailable'}</span>
-                    </div>
-                    <p class="domain-description">${highlightedDescription}</p>
-                    <div class="domain-footer">
-                        ${domain.repo ? `
-                            <a href="https://github.com/${domain.repo}" target="_blank" class="repo-link external-link">
-                                <svg class="github-icon" viewBox="0 0 24 24"><path d="M12 0c-6.63 0-12 5.37-12 12 0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                                ${domain.repo}
-                            </a>
-                            <div class="github-stats" id="stats-${domain.repo.replace('/', '-')}">
-                                <div class="github-stat"><img src="https://img.shields.io/github/stars/${domain.repo}?style=flat&label=Stars" alt="Stars"></div>
-                                <div class="github-stat"><img src="https://img.shields.io/github/forks/${domain.repo}?style=flat&label=Forks" alt="Forks"></div>
-                                <div class="github-stat"><img src="https://img.shields.io/github/languages/top/${domain.repo}?style=flat" alt="Forks"></div>
-                            </div>
-                        ` : `
-                            <span class="repo-link" style="color: var(--text-tertiary);">
-                            <svg class="github-icon" viewBox="0 0 24 24"><path d="M12 0c-6.63 0-12 5.37-12 12 0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/><line x1="4" y1="20" x2="20" y2="4" stroke="red" stroke-width="3" stroke-linecap="round"/></svg>
-                            No GitHub repository</span>
-                            <div></div>
-                        `}
-                    </div>
-                </div>
-            `;
-        }
-        function highlightText(text, searchTerm) {
-            if (!searchTerm) return text;
-            return text.replace(new RegExp(`(${searchTerm.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi'), '<span class="highlight">$1</span>');
-        }
-        function debounce(func, wait) {
-            let timeout;
-            return function(...args) {
-                clearTimeout(timeout);
-                timeout = setTimeout(() => func(...args), wait);
-            };
-        }
-        document.addEventListener('DOMContentLoaded', async () => {
-            initializeTheme();
-            initializeView();
-            await loadDomainsData();
-            renderDomains();
-            updateSearchResults();
-            initializeEventListeners();
-            hideLoadingScreen();
-        });
-        window.addEventListener('error', e => console.error('Global error:', e.error));
+    });
+
+    document.addEventListener('click', event => {
+        if (!searchFilters.contains(event.target)) closeFilters();
+        const link = event.target.closest('a[target="_blank"]');
+        if (!link || event.defaultPrevented || dialog.open) return;
+        event.preventDefault();
+        linkToOpen = link;
+        byId('confirmLinkUrl').textContent = link.href;
+        dialog.showModal();
+        byId('cancelLink').focus();
+    });
+    byId('confirmLink').addEventListener('click', () => {
+        if (linkToOpen) window.open(linkToOpen.href, '_blank', 'noopener,noreferrer');
+        dialog.close();
+    });
+    byId('cancelLink').addEventListener('click', () => dialog.close());
+    dialog.addEventListener('click', event => {
+        if (event.target !== dialog) return;
+        const bounds = dialog.getBoundingClientRect();
+        if (event.clientX < bounds.left || event.clientX > bounds.right
+            || event.clientY < bounds.top || event.clientY > bounds.bottom) dialog.close();
+    });
+    dialog.addEventListener('close', () => {
+        linkToOpen?.focus({ preventScroll: true });
+        linkToOpen = null;
+    });
+
+    const scrollTop = byId('scrollTop');
+    function syncScrollButton() {
+        scrollTop.hidden = window.scrollY <= 100;
+    }
+    scrollTop.addEventListener('click', () => {
+        const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        window.scrollTo({ top: 0, behavior: reducedMotion ? 'instant' : 'smooth' });
+    });
+    window.addEventListener('scroll', syncScrollButton, { passive: true });
+    syncScrollButton();
+
+    let savedView;
+    try {
+        savedView = localStorage.getItem('domainView');
+    } catch {
+        // A private browsing session may block storage.
+    }
+    setView(savedView);
+    window.addEventListener('popstate', restoreSearchFromURL);
+    restoreSearchFromURL();
+    loadCatalogue();
+})();

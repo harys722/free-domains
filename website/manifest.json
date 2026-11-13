@@ -1,17 +1,17 @@
 {
   "name": "Free Domains",
   "short_name": "Free Domains",
-  "description": "A big list of free subdomains for personal websites, portfolios, open-source projects, and other online projects. Find your desired domain here in our little shop, completely free of charge.",
-  "start_url": "/",
+  "description": "A big list of free subdomains for personal websites, portfolios, open-source projects, and other online projects.",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#3b82f6",
-  "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/favicon.ico",
-      "sizes": "64x64",
-      "type": "image/x-icon"
+      "src": "assets/globe.png",
+      "sizes": "192x192",
+      "type": "image/png"
     }
   ]
 }
