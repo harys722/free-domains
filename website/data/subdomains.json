@@ -670,5 +670,19 @@
     "description": "A free subdomain for developers on devs.surf: always free, forever.",
     "repo": null,
     "available": true
+  },
+  {
+    "name": "meowed-at.me",
+    "url": "https://meowed-at.me/",
+    "description": "Grab your own adorable .meowed-at.me subdomain.",
+    "repo": "meowed-at-me/register",
+    "available": true
+  },
+  {
+    "name": "has-a.space",
+    "url": "https://has-a.space/",
+    "description": "Grab your own adorable .has-a.space subdomain.",
+    "repo": "has-a-space/register",
+    "available": true
   }
 ]
