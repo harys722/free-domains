@@ -33,9 +33,9 @@
 <div align="center">
   <h2>List of Free Domains Services</h2>
 
-  📋 All Domains Services: **98**
+  📋 All Domains Services: **99**
   &bull;
-  ✅ Available: **69**
+  ✅ Available: **70**
   &bull;
   ❌ Unavailable: **29**
 
@@ -115,6 +115,7 @@
  | [devs.surf](https://devs.surf/) | A free subdomain for developers on devs.surf: always free, forever. | — | ✅ |
  | [meowed-at.me](https://meowed-at.me/) | Grab your own adorable .meowed-at.me subdomain. | [meowed-at-me/register](https://github.com/meowed-at-me/register) <br><br> ![GitHub stars](https://img.shields.io/github/stars/meowed-at-me/register?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/meowed-at-me/register?style=flat&label=Forks) | ✅ |
  | [has-a.space](https://has-a.space/) | Grab your own adorable .has-a.space subdomain. | [has-a-space/register](https://github.com/has-a-space/register) <br><br> ![GitHub stars](https://img.shields.io/github/stars/has-a-space/register?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/has-a-space/register?style=flat&label=Forks) | ✅ |
+ | [is-a.wiki](https://is-a.wiki/) | Grab your own cute .is-a.wiki subdomain. | [free-names/is-a-wiki](https://github.com/free-names/is-a-wiki) <br><br> ![GitHub stars](https://img.shields.io/github/stars/free-names/is-a-wiki?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/free-names/is-a-wiki?style=flat&label=Forks) | ✅ |
  | [Domains Project](https://getyourfree.space/) | Free developer subdomains under owns.it.com, with more domains coming soon. | [domainsproject/register](https://github.com/domainsproject/register) <br><br> ![GitHub stars](https://img.shields.io/github/stars/domainsproject/register?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/domainsproject/register?style=flat&label=Forks) | ❌ |
  | [is-a.shop](https://is-a.shop/) | Get is-a.shop subdomain for your shop. | [is-a-shop/register](https://github.com/is-a-shop/register) <br><br> ![GitHub stars](https://img.shields.io/github/stars/is-a-shop/register?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/is-a-shop/register?style=flat&label=Forks) | ❌ |
  | [openalias.xyz](https://openalias.xyz/) | Free developer subdomains: hi-dev.pro & dev-at.net for your website. | — | ❌ |
