@@ -684,5 +684,12 @@
     "description": "Grab your own adorable .has-a.space subdomain.",
     "repo": "has-a-space/register",
     "available": true
+  },
+  {
+    "name": "is-a.wiki",
+    "url": "https://is-a.wiki/",
+    "description": "Grab your own cute .is-a.wiki subdomain.",
+    "repo": "free-names/is-a-wiki",
+    "available": true
   }
 ]
