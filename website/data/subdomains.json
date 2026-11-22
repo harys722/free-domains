@@ -698,5 +698,12 @@
     "description": "Free developer subdomains for side projects. One free hostname, no card required.",
     "repo": "x1n-Q/LinkoraLocal",
     "available": true
+  },
+  {
+    "name": "the-dev.xyz",
+    "url": "https://the-dev.xyz",
+    "description": "Free '*.the-dev.xyz' subdomains for developers via GitHub pull requests.",
+    "repo": "tetoverse/register-the-dev.xyz",
+    "available": true
   }
 ]
