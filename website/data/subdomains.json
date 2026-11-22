@@ -691,5 +691,12 @@
     "description": "Grab your own cute .is-a.wiki subdomain.",
     "repo": "free-names/is-a-wiki",
     "available": true
+  },
+  {
+    "name": "nx1.lol",
+    "url": "https://linkora.top",
+    "description": "Free developer subdomains for side projects. One free hostname, no card required.",
+    "repo": "x1n-Q/LinkoraLocal",
+    "available": true
   }
 ]
