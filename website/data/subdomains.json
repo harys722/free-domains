@@ -205,14 +205,14 @@
   {
     "name": "mod.land",
     "url": "https://mod.land/",
-    "description": "📦 Pretty subdomains for you deno project.",
+    "description": "\ud83d\udce6 Pretty subdomains for you deno project.",
     "repo": "denosaurs/mod.land",
     "available": false
   },
   {
     "name": "is-an.ai",
     "url": "https://is-an.ai/",
-    "description": "🤖 Free .is-an.ai subdomains for AI projects. No DNS config, no waiting.",
+    "description": "\ud83e\udd16 Free .is-an.ai subdomains for AI projects. No DNS config, no waiting.",
     "repo": "is-an-ai/is-an.ai",
     "available": false
   },
@@ -247,7 +247,7 @@
   {
     "name": "is-an.app",
     "url": "https://is-an.app/",
-    "description": "🌐 DNS configuration for some of my domains. (Not available anymore)",
+    "description": "\ud83c\udf10 DNS configuration for some of my domains. (Not available anymore)",
     "repo": "tarampampam/free-domains",
     "available": false
   },
@@ -268,7 +268,7 @@
   {
     "name": "is-a.co",
     "url": "https://is-a.co/",
-    "description": "🌐 Grab your own subdomain for free Follow the steps listed below to get your own subdomain!",
+    "description": "\ud83c\udf10 Grab your own subdomain for free Follow the steps listed below to get your own subdomain!",
     "repo": "PythonicBoat/is-a.co",
     "available": false
   },
@@ -366,14 +366,14 @@
   {
     "name": "www.dnshe.com",
     "url": "https://www.dnshe.com/",
-    "description": "🌐 DNSHE Official - Stable & Free Subdomains for Developers. Support 180-day renewal window, Anycast DNS, and REST API. (us.ci, cc.cd, de5.net, ccwu.cc)",
+    "description": "\ud83c\udf10 DNSHE Official - Stable & Free Subdomains for Developers. Support 180-day renewal window, Anycast DNS, and REST API. (us.ci, cc.cd, de5.net, ccwu.cc)",
     "repo": "dnshe/DNSHE-FreeDomains",
     "available": true
   },
   {
     "name": "getxyz.de",
     "url": "https://getxyz.de/",
-    "description": "Free *.getxyz.de subdomains for developers — one PR away. 🚀",
+    "description": "Free *.getxyz.de subdomains for developers \u2014 one PR away. \ud83d\ude80",
     "repo": "blackredit/register",
     "available": true
   },
@@ -450,7 +450,7 @@
   {
     "name": "nameforge.rf.gd",
     "url": "https://nameforge.rf.gd/",
-    "description": "NameForge is a free, community-driven subdomain registry — claim your own developer subdomain under our collection of unique domains.",
+    "description": "NameForge is a free, community-driven subdomain registry \u2014 claim your own developer subdomain under our collection of unique domains.",
     "repo": "NameForge-Free-Domain/register",
     "available": true
   },
@@ -478,7 +478,7 @@
   {
     "name": "makesome.cool",
     "url": "https://makesome.cool/",
-    "description": "Free subdomains for your interesting open-source projects. Join us and “Make Some Cool”",
+    "description": "Free subdomains for your interesting open-source projects. Join us and \u201cMake Some Cool\u201d",
     "repo": "1834423612/makesome.cool",
     "available": false
   },
@@ -690,6 +690,13 @@
     "url": "https://is-a.wiki/",
     "description": "Grab your own cute .is-a.wiki subdomain.",
     "repo": "free-names/is-a-wiki",
+    "available": true
+  },
+  {
+    "name": "Linkora",
+    "url": "https://linkora.top",
+    "description": "Free developer subdomains for side projects. One free hostname, no card required.",
+    "repo": "x1n-Q/LinkoraLocal",
     "available": true
   }
 ]
