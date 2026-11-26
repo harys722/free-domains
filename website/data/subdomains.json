@@ -705,5 +705,12 @@
     "description": "Free '*.the-dev.xyz' subdomains for developers via GitHub pull requests.",
     "repo": "tetoverse/register-the-dev.xyz",
     "available": true
+  },
+  {
+    "name": "prod.page",
+    "url": "https://get.prod.page",
+    "description": "Free 'yourname.prod.page' subdomain with HTTPS and up to 10 DNS records (A, AAAA, CNAME, TXT, MX), one sub-address per app. Hosting for websites, Docker containers and apps included, servers in Germany. Free blitz.cloud account, no card.",
+    "repo": null,
+    "available": true
   }
 ]
