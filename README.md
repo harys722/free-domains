@@ -33,9 +33,9 @@
 <div align="center">
   <h2>List of Free Domains Services</h2>
 
-  📋 All Domains Services: **101**
+  📋 All Domains Services: **102**
   &bull;
-  ✅ Available: **72**
+  ✅ Available: **73**
   &bull;
   ❌ Unavailable: **29**
 
@@ -91,7 +91,7 @@
  | [fluxcast.dev](https://sub.fluxcast.dev/) | Free GitOps-based subdomain registry for developers (*.fluxcast.dev). | [IlyaP358/fluxcast-domains](https://github.com/IlyaP358/fluxcast-domains) <br><br> ![GitHub stars](https://img.shields.io/github/stars/IlyaP358/fluxcast-domains?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/IlyaP358/fluxcast-domains?style=flat&label=Forks) | ✅ |
  | [is-a.stupid.cat](https://is-a.stupid.cat/) | Register for your own stupid-looking '.is-a.stupid.cat' subdomain. | [is-a-stupid-cat/register](https://github.com/is-a-stupid-cat/register) <br><br> ![GitHub stars](https://img.shields.io/github/stars/is-a-stupid-cat/register?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/is-a-stupid-cat/register?style=flat&label=Forks) | ✅ |
  | [4k.pics](https://4k.pics/) | Get your own personalized subdomain at 4k.pics completely free of charge. | — | ✅ |
- | [Public Free Suffix](https://publicfreesuffix.org/) | Non-profit free subdomains for personal sites, open-source projects and AI apps on fs.kg, bg5.net, is-a.si, nastu.net, tun.re, us.mw and pfsdns.org, with a web console, REST API and MCP support for LLM agents. | [PublicFreeSuffix/PublicFreeSuffix](https://github.com/PublicFreeSuffix/PublicFreeSuffix) <br><br> ![GitHub stars](https://img.shields.io/github/stars/PublicFreeSuffix/PublicFreeSuffix?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/PublicFreeSuffix/PublicFreeSuffix?style=flat&label=Forks) | ✅ |
+ | [Public Free Suffix](https://publicfreesuffix.org/) | Non-profit free subdomains for personal sites, open-source projects and AI apps on is-a.si, pfsdns.org, nastu.net, tun.re, no.kg and so.kg, with a web console, REST API and MCP support for LLM agents. | [PublicFreeSuffix/PublicFreeSuffix](https://github.com/PublicFreeSuffix/PublicFreeSuffix) <br><br> ![GitHub stars](https://img.shields.io/github/stars/PublicFreeSuffix/PublicFreeSuffix?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/PublicFreeSuffix/PublicFreeSuffix?style=flat&label=Forks) | ✅ |
  | [FreeDNS (afraid.org)](https://freedns.afraid.org/) | Free DNS hosting plus free dynamic and static subdomains on a shared registry of 23,000+ domains. | — | ✅ |
  | [Dynu](https://www.dynu.com/) | Free dynamic DNS with a free third-level domain, or use your own domain. | — | ✅ |
  | [DuckDNS](https://www.duckdns.org/) | Free dynamic DNS subdomains under duckdns.org. | — | ✅ |
@@ -118,6 +118,7 @@
  | [is-a.wiki](https://is-a.wiki/) | Grab your own cute .is-a.wiki subdomain. | [free-names/is-a-wiki](https://github.com/free-names/is-a-wiki) <br><br> ![GitHub stars](https://img.shields.io/github/stars/free-names/is-a-wiki?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/free-names/is-a-wiki?style=flat&label=Forks) | ✅ |
  | [nx1.lol](https://linkora.top) | Free developer subdomains for side projects. One free hostname, no card required. | [x1n-Q/LinkoraLocal](https://github.com/x1n-Q/LinkoraLocal) <br><br> ![GitHub stars](https://img.shields.io/github/stars/x1n-Q/LinkoraLocal?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/x1n-Q/LinkoraLocal?style=flat&label=Forks) | ✅ |
  | [the-dev.xyz](https://the-dev.xyz) | Free '*.the-dev.xyz' subdomains for developers via GitHub pull requests. | [tetoverse/register-the-dev.xyz](https://github.com/tetoverse/register-the-dev.xyz) <br><br> ![GitHub stars](https://img.shields.io/github/stars/tetoverse/register-the-dev.xyz?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/tetoverse/register-the-dev.xyz?style=flat&label=Forks) | ✅ |
+ | [prod.page](https://get.prod.page) | Free 'yourname.prod.page' subdomain with HTTPS and up to 10 DNS records (A, AAAA, CNAME, TXT, MX), one sub-address per app. Hosting for websites, Docker containers and apps included, servers in Germany. Free blitz.cloud account, no card. | — | ✅ |
  | [Domains Project](https://getyourfree.space/) | Free developer subdomains under owns.it.com, with more domains coming soon. | [domainsproject/register](https://github.com/domainsproject/register) <br><br> ![GitHub stars](https://img.shields.io/github/stars/domainsproject/register?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/domainsproject/register?style=flat&label=Forks) | ❌ |
  | [is-a.shop](https://is-a.shop/) | Get is-a.shop subdomain for your shop. | [is-a-shop/register](https://github.com/is-a-shop/register) <br><br> ![GitHub stars](https://img.shields.io/github/stars/is-a-shop/register?style=flat&label=Stars) ![GitHub forks](https://img.shields.io/github/forks/is-a-shop/register?style=flat&label=Forks) | ❌ |
  | [openalias.xyz](https://openalias.xyz/) | Free developer subdomains: hi-dev.pro & dev-at.net for your website. | — | ❌ |
